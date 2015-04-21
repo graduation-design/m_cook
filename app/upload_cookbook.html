@@ -17,39 +17,68 @@
 </div>
 
 <div class="wrapper">
-  <input placeholder="菜名" class="food_name">
-  <h3>美食故事</h3>
-  <textarea rows="3"  class="food_intro"></textarea>
-  <h3>食材</h3>
-  <ol class="food_material">
-    <li>
-      <input placeholder="如 鸡蛋" class="one_piece"><input placeholder="如 一个" class="amount_material">
-    </li>
-    <li>
-      <input placeholder="如 鸡蛋" class="one_piece"><input placeholder="如 一个" class="amount_material">
-    </li>
-    <li>
-      <input placeholder="如 鸡蛋" class="one_piece"><input placeholder="如 一个" class="amount_material">
-    </li>
-  </ol>
-  <div class="btn">
-    <span class="entypo-plus-circled"></span>
+
+  <div class="text">
+    <input placeholder="菜名" class="food_name">
+    <h3>美食故事</h3>
+    <textarea rows="3" class="food_intro"></textarea>
   </div>
-  <h3>做法</h3>
+
+  <div class="material"><h3>食材</h3>
+    <ol class="food_material">
+      <li class="one_material">
+        <input placeholder="如 鸡蛋" class="one_piece"><input placeholder="如 一个" class="amount_material">
+        <span class="entypo-cancel-circled"></span>
+      </li>
+      <li class="one_material">
+        <input placeholder="如 鸡蛋" class="one_piece"><input placeholder="如 一个" class="amount_material">
+        <span class="entypo-cancel-circled"></span>
+      </li>
+      <li class="one_material">
+        <input placeholder="如 鸡蛋" class="one_piece"><input placeholder="如 一个" class="amount_material">
+        <span class="entypo-cancel-circled"></span>
+      </li>
+    </ol>
+    <button type="button" class="add">添加食材</button>
+  </div>
+
   <div class="step">
-    <div class="step-num">1</div><textarea rows="5" class="step-text"></textarea>
-    <div class="step-pic"><span class="entypo-camera" ></span></div>
-    <div class="step-num">2</div><textarea rows="5" class="step-text"></textarea>
-    <div class="step-pic"><span class="entypo-camera" ></span></div>
-    <div class="step-num">3</div><textarea rows="5" class="step-text"></textarea>
-    <div class="step-pic"><span class="entypo-camera"></span></div>
-    <div class="btn">
-      <span class="entypo-plus-circled"></span>
-    </div>
+    <h3>做法</h3>
+    <ol class="food-step">
+      <li class="each-step">
+        <div class="step-pic"><span class="entypo-camera"></span></div>
+        <div class="step-num">1</div>
+        <textarea rows="5" class="step-text"></textarea>
+        <div class="btn">
+          <div class="entypo-minus-circled"></div>
+          <div class="entypo-plus-circled"></div>
+        </div>
+      </li>
+      <li class="each-step">
+        <div class="step-pic"><span class="entypo-camera"></span></div>
+        <div class="step-num">2</div>
+        <textarea rows="5" class="step-text"></textarea>
+        <div class="btn">
+          <div class="entypo-minus-circled"></div>
+          <div class="entypo-plus-circled"></div>
+        </div>
+      </li>
+      <li class="each-step">
+        <div class="step-pic"><span class="entypo-camera"></span></div>
+        <div class="step-num">3</div>
+        <textarea rows="5" class="step-text"></textarea>
+        <div class="btn">
+           <div class="entypo-minus-circled"></div>
+           <div class="entypo-plus-circled"></div>
+        </div>
+      </li>
+      <button type="button" class="edit">编辑步骤</button>
+    </ol>
   </div>
+
   <h3>小贴士</h3>
   <textarea rows="3" class="tip"></textarea>
-  <div class="release">发布</div>
+  <button type="button" class="release">发 布</button>
 </div>
 </body>
 </html>

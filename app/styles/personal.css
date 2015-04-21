@@ -1,0 +1,54 @@
+.header {
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.36rem;
+  color: #fff;
+  background-color: #14e3d6;
+}
+
+.text
+{
+  margin-left: 0.12rem;
+}
+.entypo-chat{
+  float: right;
+  margin-left: 0.36rem;
+  margin-right: 0.24rem;
+}
+
+.entypo-cog
+{
+  float: right;
+}
+
+.personal-info{
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.personal-pic{
+  width: 66px;
+  height: 66px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 66px auto;
+  border-radius: 66px;
+  border: 2px solid #fff;
+  display: inline-block;
+  margin-top: 0.2988rem;
+}
+
+.category{
+  width: 100%;
+  height: 0.8rem;
+  background-color: #cbcbcb;
+  line-height: 0.8rem;
+}
+
+.each{
+  display: inline-block;
+  width: 14%;
+  margin-left: 0.6rem;
+}
+

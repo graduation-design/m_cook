@@ -55,64 +55,94 @@ h3 {
   margin-bottom: 0;
 }
 
-li {
-  margin-top: -1px;
-
+.one_material {
+  margin: 0.12rem auto 0;
+  width: 90%;
+  height: 0.56rem;
+  line-height: 0.58rem;
 }
 
 .one_piece {
-  width: 64%;
+  width: 54%;
   height: 0.48rem;
+  vertical-align: top;
 }
 
 .amount_material {
-  width: 35%;
+  width: 30%;
   margin-left: -1px;
   height: 0.48rem;
+  vertical-align: top;
+}
+
+.entypo-cancel-circled{
+  font-size: 16px;
+  opacity: 0.4;
+  margin-left: 0.3rem;
 }
 
 .btn {
-  height: 0.44rem;
+  float: right;
+  height: 2rem;
+  opacity: 0.4;
+}
+
+.entypo-minus-circled{
+  font-size: 16px;
 }
 
 .entypo-plus-circled {
-  float: right;
-  font-size: 25px;
-  color: #d9c4b0;
+  font-size: 16px;
+  margin-top: 1.32rem;
 }
 
-.step-num {
-  background-color: #d9c4b0;
-  width: 5%;
-  height: 2rem;
+.food-step{
+  list-style: none;
+  padding: 0;
   margin: 0;
-  text-align: center;
-  color: #fff;
-  display: inline-block;
-  vertical-align: top;
-  line-height: 2rem;
-  border: 1px solid #d9c4b0;
-}
-
-.step-text {
-  width: 60%;
-  margin: 0;
-  height: 1.92rem;
 }
 
 .step-pic {
   height: 2rem;
   background-color: #ffebd7;
   width: 30%;
-  float: right;
   text-align: center;
   line-height: 2rem;
   border: 1px solid #e1e1e1;
+  display: inline-block;
+  float: left;
 }
+.step-num {
+  background-color: #d9c4b0;
+  width: 5%;
+  height: 2rem;
+  text-align: center;
+  color: #fff;
+  vertical-align: top;
+  line-height: 2rem;
+  border: 1px solid #d9c4b0;
+  float: left;
+  margin-left: 0.12rem;
+  border-top-left-radius:3px ;
+  border-bottom-left-radius:3px ;
+}
+
+.step-text {
+  width: 52%;
+  margin: 0;
+  height: 1.92rem;
+  border-top-right-radius:3px ;
+  border-bottom-right-radius:3px ;
+}
+
 
 .entypo-camera {
   font-size: 0.6rem;
   color: #d9c4b0;
+}
+
+.each-step{
+  margin-top: 0.12rem;
 }
 
 .tip {
@@ -125,9 +155,35 @@ li {
   background-color: #fd4644;
   color: #f1fdf0;
   height: 0.6rem;
-  vertical-align: top;
   line-height: 0.6rem;
   width: 60%;
-  margin: 0.12rem auto;
+  margin-top: 0.12rem;
+  margin-left: 1.1rem;
   text-align: center;
+  border: solid 1px #e1e1e1;
+  border-radius: 3px;
+}
+
+.add{
+  background-color: #b3b3b3;
+  color: #f1fdf0;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  width: 22%;
+  border: solid 1px #e1e1e1;
+  border-radius: 3px;
+  margin-top: 0.24rem;
+  margin-left: 4rem;
+}
+
+.edit{
+  background-color: #b3b3b3;
+  color: #f1fdf0;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  width: 22%;
+  border: solid 1px #e1e1e1;
+  border-radius: 3px;
+  margin-top: 0.24rem;
+  margin-left: 4.6rem;
 }
