@@ -22,7 +22,7 @@ body {
 .wrapper {
   width: 92%;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 0 1rem;
 }
 
 .author{
@@ -33,8 +33,6 @@ body {
 .personal-pic {
   width: 44px;
   height: 44px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
   background-size: 44px auto;
   border-radius: 44px;
   border: 2px solid #fff;
@@ -111,10 +109,16 @@ ul, ol {
   width: 0.24rem;
   height: 2rem;
   font-weight: bold;
+  font-size: 0.24rem;
 }
 
 .step li {
   margin-top: 0.5rem;
+  font-size: 0;
+}
+
+.step li .text{
+  font-size: 0.24rem;
 }
 
 .talk{
@@ -143,8 +147,6 @@ ul, ol {
 .talk-pic {
   width: 33px;
   height: 33px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
   background-size: 33px auto;
   border-radius: 33px;
   border: 2px solid #fff;
@@ -166,6 +168,7 @@ ul, ol {
 .more
 {
   text-align: center;
+  margin-bottom: 0.48rem;
 }
 .btn-talk{
   width: 50px;
@@ -173,4 +176,32 @@ ul, ol {
   font-size: 0.12rem;
   border-radius: 12px;
   border: 2px solid #fff;
+}
+
+.comment_editor{
+  border: 1px solid #ccc;
+  border-top: none;
+  width: 80%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.comment_editor p{
+  width: 100%;
+  background-color: #fafafa;
+  margin-bottom: 0.1rem;
+  padding: 0 2%;
+  margin-left: -2%;
+  margin-top: 0;
+}
+
+.comment_editor p:focus{
+  outline: none;
+}
+
+.entypo-paper-plane{
+  font-size: 0.36rem;
+  margin-left: 0.12rem;
+  display: inline-block;
+  vertical-align: bottom;
 }
