@@ -5,7 +5,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-size: 0.24rem;
+  font-size: 0.36rem;
 }
 
 #main_pic {
@@ -47,6 +47,7 @@ body {
   vertical-align: top;
   margin-top: 0.54rem;
   margin-left: 0.12rem;
+  font-size: 0.3rem;
 }
 
 .time{
@@ -56,6 +57,11 @@ body {
   margin-top: 0.54rem;
   float: right;
   margin-right: 0.18rem;
+  font-size: 0.3rem;
+}
+
+.introduce p{
+  margin-top: 0.16rem;
 }
 
 h1 {
@@ -106,10 +112,10 @@ ul, ol {
   content: counter(step-num);
   display: inline-block;
   vertical-align: top;
-  width: 0.24rem;
+  width: 0.36rem;
   height: 2rem;
   font-weight: bold;
-  font-size: 0.24rem;
+  font-size: 0.36rem;
 }
 
 .step li {
@@ -118,17 +124,16 @@ ul, ol {
 }
 
 .step li .text{
-  font-size: 0.24rem;
+  font-size: 0.36rem;
 }
 
 .talk{
   border-bottom: 1px solid #e1e1e1;
-  height: 1.54rem;
   margin-bottom: 0.12rem;
 }
 
 .text {
-  width: 58%;
+  width: 57%;
   display: inline-block;
 }
 
@@ -157,8 +162,7 @@ ul, ol {
 
 .talk-text{
   display: inline-block;
-  margin-top: 0.08rem;
-  margin-left: 0.24rem;
+  margin: 0.08rem 0 0.12rem 0.24rem;
 }
 
 .ayname {
@@ -172,7 +176,7 @@ ul, ol {
 }
 .btn-talk{
   width: 50px;
-  height: 26px;
+  height: 30px;
   font-size: 0.12rem;
   border-radius: 12px;
   border: 2px solid #fff;
@@ -181,7 +185,7 @@ ul, ol {
 .comment_editor{
   border: 1px solid #ccc;
   border-top: none;
-  width: 80%;
+  width: 84%;
   display: inline-block;
   vertical-align: bottom;
 }
@@ -201,7 +205,7 @@ ul, ol {
 
 .entypo-paper-plane{
   font-size: 0.36rem;
-  margin-left: 0.12rem;
+  margin-left: 0.24rem;
   display: inline-block;
   vertical-align: bottom;
 }
