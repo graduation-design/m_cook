@@ -2,6 +2,7 @@
   "name": "mcook",
   "private": true,
   "dependencies": {
-    "jquery": "~2.1.1"
+    "jquery": "~2.1.1",
+    "jquery-hammerjs": "https://github.com/hammerjs/jquery.hammer.js.git#~2.0.0"
   }
 }

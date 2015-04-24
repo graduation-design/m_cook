@@ -4,9 +4,10 @@
     <file url="file://$PROJECT_DIR$/app/scripts/cookbook.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/stepdetail.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/stepdetail.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/stepdetailtwo.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/cookbook.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/stepdetail.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/test.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gulpfile.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/push.sh" charset="UTF-8" />
   </component>
 </project>
