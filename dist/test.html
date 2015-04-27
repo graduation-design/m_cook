@@ -1,0 +1,13 @@
+<!doctype html> <html> <head> <meta charset=UTF-8> <title>Document</title> <style>
+    .blue {
+      background: skyblue;
+    }
+
+    .card{
+      border-radius: 10px;
+    }
+  </style> </head> <body> <p class=blue>123</p> <p class="card blue">12</p> <script src=scripts/vendor.js></script> <script>
+$('.blue,.card').on('click', function(){
+  $('.card').css('height', 500);
+})
+</script> </body> </html> 

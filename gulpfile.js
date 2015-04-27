@@ -17,14 +17,6 @@ gulp.task('styles', function () {
     .pipe(reload({stream: true}));
 });
 
-gulp.task('jshint', function () {
-  return gulp.src('app/scripts/**/*.js')
-    .pipe(reload({stream: true, once: true}))
-    .pipe($.jshint())
-    .pipe($.jshint.reporter('jshint-stylish'))
-    .pipe($.if(!browserSync.active, $.jshint.reporter('fail')));
-});
-
 gulp.task('html', ['styles'], function () {
   var assets = $.useref.assets({searchPath: ['.tmp', 'app', '.']});
 
@@ -36,18 +28,6 @@ gulp.task('html', ['styles'], function () {
     .pipe($.useref())
     .pipe($.if('*.html', $.minifyHtml({conditionals: true, loose: true})))
     .pipe(gulp.dest('dist'));
-});
-
-gulp.task('images', function () {
-  return gulp.src('app/images/**/*')
-    .pipe($.cache($.imagemin({
-      progressive: true,
-      interlaced: true,
-      // don't remove IDs from SVGs, they are often used
-      // as hooks for embedding and styling
-      svgoPlugins: [{cleanupIDs: false}]
-    })))
-    .pipe(gulp.dest('dist/images'));
 });
 
 gulp.task('extras', function () {
@@ -76,8 +56,7 @@ gulp.task('serve', ['styles'], function () {
   // watch for changes
   gulp.watch([
     'app/*.html',
-    'app/scripts/**/*.js',
-    'app/images/**/*'
+    'app/scripts/**/*.js'
   ]).on('change', reload);
 
   gulp.watch('app/styles/**/*.css', ['styles']);
@@ -95,7 +74,7 @@ gulp.task('wiredep', function () {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['jshint', 'html', 'images', 'extras'], function () {
+gulp.task('build', ['html', 'extras'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
