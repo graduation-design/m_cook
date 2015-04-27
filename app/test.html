@@ -4,29 +4,18 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <style>
-    .blue {
-      background: skyblue;
-    }
-
     .card{
-      border-radius: 10px;
+      height: 300px;
+      background: skyblue;
     }
   </style>
 </head>
 <body>
-<p class="blue">123</p>
-
-<p class="card blue">12</p>
-<!-- build:js scripts/vendor.js -->
-<!-- bower:js -->
-<script src="/bower_components/jquery/dist/jquery.js"></script>
-<!-- endbower -->
-<!-- endbuild -->
-
-<script>
-$('.blue,.card').on('click', function(){
-  $('.card').css('height', 500);
-})
-</script>
+<div class="card" contenteditable="true">
+  456456
+</div>
+<div class="card" contenteditable>
+  123123
+</div>
 </body>
 </html>

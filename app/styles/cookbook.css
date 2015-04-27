@@ -50,7 +50,7 @@ body {
   font-size: 0.3rem;
 }
 
-.time{
+.author .time{
   color: #b3b3b3;
   display: inline-block;
   vertical-align: top;
@@ -125,16 +125,14 @@ ul, ol {
 
 .step li .text{
   font-size: 0.36rem;
+  width: 57%;
+  display: inline-block;
 }
 
 .talk{
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 0.12rem;
-}
-
-.text {
-  width: 57%;
-  display: inline-block;
+  font-size: 0;
 }
 
 .step-pic {
@@ -149,29 +147,40 @@ ul, ol {
   width: 100%;
 }
 
+.talk-pic-container{
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+}
+
 .talk-pic {
   width: 33px;
   height: 33px;
   background-size: 33px auto;
   border-radius: 33px;
   border: 2px solid #fff;
-  display: inline-block;
   margin-top: 0;
-  vertical-align: top;
+  display: inline-block;
 }
 
 .talk-text{
+  width: 80%;
   display: inline-block;
-  margin: 0.08rem 0 0.12rem 0.24rem;
+  margin: 0.08rem 0 0.12rem ;
+  font-size: 0.3rem
 }
 
 .ayname{
   color: #f66061;
+  font-size: 0.3rem
+}
+.time{
+  text-align: right;
 }
 .aytime{
   color: #b3b3b3;
-  margin-left: 2.2rem;
   font-size: 0.3rem;
+  float: right;
 }
 
 .more
@@ -191,9 +200,9 @@ ul, ol {
   border: 1px solid #ccc;
   border-top: none;
   width: 84%;
-  display: inline-block;
-  vertical-align: bottom;
+  vertical-align: text-bottom;
 }
+
 
 .comment_editor p{
   width: 100%;
@@ -210,9 +219,9 @@ ul, ol {
 
 .entypo-paper-plane{
   font-size: 0.36rem;
-  margin-left: 0.36rem;
-  display: inline-block;
-  vertical-align: bottom;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .big-pic{
@@ -226,4 +235,8 @@ ul, ol {
 .big-pic img{
   height: 100%;
   width: 100%;
+}
+
+.comment{
+  position: relative;
 }
