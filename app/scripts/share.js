@@ -5,7 +5,7 @@ $(document).ready(function(){
 		,menuOpen=false
 		,buttonsNum=$shareButtons.length
 		,buttonsMid=(buttonsNum/2)
-		,spacing=56
+		,spacing=75
 	;
 
 	function openShareMenu(){
