@@ -9,7 +9,7 @@ function init(viewportWidth) {
 }
 
 function setPicIndex(index, viewportWidth) {
-  $('.step-pic ol').css('transform', 'translateX('+ (-index * viewportWidth) +'px)');
+  $('.step-pic ol').css('left', (-index * viewportWidth));
   $(".header").text(index + 1 + '/3');
 }
 

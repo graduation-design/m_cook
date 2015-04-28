@@ -18,6 +18,7 @@ html body{
 .step-pic{
   height: 100%;
   overflow: hidden;
+  z-index: 2;
 }
 .step-pic ol{
   list-style: none;
