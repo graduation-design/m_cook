@@ -1,1 +1,1 @@
-function init(){var i=$(".big-pic").height();$("#slider_container").css("height",i),$(".slides").css("height",i),new $JssorSlider$("slider_container",{$AutoPlay:!1,$DragOrientations:1})}$(function(){init()});
+function init(){var i=$(".big-pic").height();$("#slider_container").css("height",i),$(".slides").css("height",i);var n=new $JssorSlider$("slider_container",{$AutoPlay:!1,$Loop:0,$DragOrientations:1,$StartIndex:location.hash.slice(1)||0});n.$On($JssorSlider$.$EVT_PARK,function(i){$(".header").text(i+1+"/3")})}$(function(){init()});
