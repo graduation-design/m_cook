@@ -25,7 +25,7 @@ body {
   padding: 0 0 1rem;
 }
 
-.author{
+.author {
   width: 100%;
   height: 66px;
 }
@@ -41,7 +41,7 @@ body {
   vertical-align: top;
 }
 
-.name{
+.name {
   color: #fd4644;
   display: inline-block;
   vertical-align: top;
@@ -50,7 +50,7 @@ body {
   font-size: 0.3rem;
 }
 
-.author .time{
+.author .time {
   color: #b3b3b3;
   display: inline-block;
   vertical-align: top;
@@ -60,7 +60,7 @@ body {
   font-size: 0.3rem;
 }
 
-.introduce p{
+.introduce p {
   margin-top: 0.16rem;
 }
 
@@ -123,13 +123,13 @@ ul, ol {
   font-size: 0;
 }
 
-.step li .text{
+.step li .text {
   font-size: 0.36rem;
   width: 57%;
   display: inline-block;
 }
 
-.talk{
+.talk {
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 0.12rem;
   font-size: 0;
@@ -147,7 +147,7 @@ ul, ol {
   width: 100%;
 }
 
-.talk-pic-container{
+.talk-pic-container {
   width: 20%;
   display: inline-block;
   vertical-align: top;
@@ -163,32 +163,34 @@ ul, ol {
   display: inline-block;
 }
 
-.talk-text{
+.talk-text {
   width: 80%;
   display: inline-block;
-  margin: 0.08rem 0 0.12rem ;
+  margin: 0.08rem 0 0.12rem;
   font-size: 0.3rem
 }
 
-.ayname{
+.ayname {
   color: #f66061;
   font-size: 0.3rem
 }
-.time{
+
+.time {
   text-align: right;
 }
-.aytime{
+
+.aytime {
   color: #b3b3b3;
   font-size: 0.3rem;
   float: right;
 }
 
-.more
-{
+.more {
   text-align: center;
   margin-bottom: 0.48rem;
 }
-.btn-talk{
+
+.btn-talk {
   width: 50px;
   height: 30px;
   font-size: 0.24rem;
@@ -196,15 +198,14 @@ ul, ol {
   border: 2px solid #fff;
 }
 
-.comment_editor{
+.comment_editor {
   border: 1px solid #ccc;
   border-top: none;
   width: 84%;
   vertical-align: text-bottom;
 }
 
-
-.comment_editor p{
+.comment_editor p {
   width: 100%;
   background-color: #fafafa;
   margin-bottom: 0.1rem;
@@ -213,18 +214,18 @@ ul, ol {
   margin-top: 0;
 }
 
-.comment_editor p:focus{
+.comment_editor p:focus {
   outline: none;
 }
 
-.entypo-paper-plane{
+.entypo-paper-plane {
   font-size: 0.36rem;
   position: absolute;
   right: 0;
   bottom: 0;
 }
 
-.big-pic{
+.big-pic {
   height: 100%;
   width: 100%;
   display: none;
@@ -232,11 +233,85 @@ ul, ol {
   top: 0;
 }
 
-.big-pic img{
+.big-pic img {
   height: 100%;
   width: 100%;
 }
 
-.comment{
+.comment {
   position: relative;
+}
+
+/*share css*/
+.share-content *,
+.share-content *:after,
+.share-content *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.share {
+  max-width: 600px;
+  height: 100px;
+  margin: 0 auto;
+  -webkit-filter: url("#goo");
+  filter: url("../share.html#goo");
+  position: relative;
+}
+
+.share-button,
+.share-toggle-button {
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: #ccc;
+  text-align: center;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.share-button:hover,
+.share-toggle-button:hover {
+  color: #fff;
+}
+
+.share-button {
+  font-size: 30px;
+  background: #737070;
+  -webkit-transform: scale(0.95, 0.95);
+  transform: scale(0.95, 0.95);
+  color: #222;
+}
+
+a.share-button {
+  color: #3D4444;
+}
+
+a.share-button:hover,
+a.share-button:focus {
+  color: #dfd7d7;
+}
+
+.share-toggle-button {
+  z-index: 9;
+  background: #666;
+  font-size: 20px;
+}
+
+.share-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.share-item {
+  display: inline-block;
 }

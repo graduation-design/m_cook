@@ -2,29 +2,32 @@
  * Created by Administrator on 2015/4/24.
  */
 
+function init(viewportWidth) {
+  $('.step-pic').css('width', viewportWidth);
+  $('.step-pic ol li').css('width', viewportWidth);
+  $('.step-pic ol').css('width', 3 * viewportWidth);
+}
+
+function setPicIndex(index, viewportWidth) {
+  $('.step-pic ol').css('left', (-index * viewportWidth));
+  $(".header").text(index + 1 + '/3');
+}
+
 $(function () {
-  var num = 1;
+  var viewportWidth = $(document).width();
+  init(viewportWidth);
+
+  var num = parseInt(location.hash.slice(1));
+  setPicIndex(num - 1, viewportWidth);
 
   $('.big-pic').hammer().on('swipeleft swiperight', function (ev) {
-    var curSelected = $('.selected');
-    var stepItems = $('.step-pic li');
-    if (ev.type === 'swipeleft') {
-      if (num < 3) {
-        $(stepItems[curSelected.index() + 1]).addClass('selected');
-        $(curSelected).removeClass("selected");
-
-        num = num + 1;
-        $(".header").text(num + '/3')
-      }
+    if (ev.type === 'swipeleft' && num < 3) {
+      num = num + 1;
+      setPicIndex(num - 1, viewportWidth)
     }
-    if (ev.type === 'swiperight') {
-      if (num > 1) {
-        $(stepItems[curSelected.index() - 1]).addClass('selected');
-        $(curSelected).removeClass("selected");
-
-        num = num - 1;
-        $(".header").text(num + '/3')
-      }
+    if (ev.type === 'swiperight' && num > 1) {
+      num = num - 1;
+      setPicIndex(num - 1, viewportWidth)
     }
   })
 

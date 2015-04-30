@@ -50,8 +50,8 @@
     <ol>
       <li>
         <div class="text">洗鸡翅</div>
-        <div class="step-pic" id="one">
-          <a href="stepdetail.html">
+        <div class="step-pic">
+          <a href="stepdetail.html#1">
             <img src="http://i1.douguo.net//upload/caiku/5/5/0/200_55052d2f57b4b40cb0ab3147a7831740.jpg"/>
           </a>
         </div>
@@ -59,13 +59,17 @@
       <li>
         <div class="text">挖鸡翅</div>
         <div class="step-pic">
-          <img
-          src="http://i1.douguo.net//upload/caiku/b/2/a/200_b25fe3ade9494b8fcfa04084ab6c776a.jpg"/></div>
+          <a href="stepdetail.html#2">
+            <img
+              src="http://i1.douguo.net//upload/caiku/b/2/a/200_b25fe3ade9494b8fcfa04084ab6c776a.jpg"/>
+          </a></div>
       </li>
       <li>
         <div class="text">炸鸡翅</div>
-        <div class="step-pic"><img
-          src="http://i1.douguo.net//upload/caiku/c/9/b/200_c9ea8c460fa223e4497efa78430af06b.jpg"/></div>
+        <div class="step-pic">
+          <a href="stepdetail.html#3"><img
+            src="http://i1.douguo.net//upload/caiku/c/9/b/200_c9ea8c460fa223e4497efa78430af06b.jpg"/>
+          </a></div>
       </li>
     </ol>
   </div>
@@ -86,6 +90,7 @@
         </div>
         <div class="talk-text">
           <span class="ayname">不要吃了</span>
+
           <p>有食欲</p>
           <span class="aytime">2015-04-21 16:35</span>
         </div>
@@ -96,6 +101,7 @@
         </div>
         <div class="talk-text">
           <span class="ayname">要吃了</span>
+
           <p>有食欲</p>
           <span class="aytime">2015-04-21 16:35</span>
         </div>
@@ -106,7 +112,9 @@
         </div>
         <div class="talk-text">
           <span class="ayname">吃了</span>
+
           <p>有食欲</p>
+
           <div class="time">
             <span class="aytime">2015-04-21 16:35</span>
           </div>
@@ -123,11 +131,57 @@
       <div class="entypo-paper-plane"></div>
     </div>
   </div>
+
+  <div class="share-content">
+    <div class="share">
+      <button class="share-toggle-button">
+        <i class="share-icon fa fa-share-alt"></i>
+      </button>
+      <ul class="share-items">
+        <li class="share-item">
+          <a href="#" class="share-button">
+            <i class="share-icon fa fa-facebook"></i>
+          </a>
+        </li>
+        <li class="share-item">
+          <a href="#" class="share-button">
+            <i class="share-icon fa fa-twitter"></i>
+          </a>
+        </li>
+        <li class="share-item">
+          <a href="#" class="share-button">
+            <i class="share-icon fa fa-pinterest"></i>
+          </a>
+        </li>
+        <li class="share-item">
+          <a href="#" class="share-button">
+            <i class="share-icon fa fa-tumblr"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800">
+    <defs>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur"/>
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -15" result="goo"/>
+        <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+      </filter>
+    </defs>
+  </svg>
 </div>
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
 <script src="/bower_components/jquery/dist/jquery.js"></script>
 <!-- endbower -->
+<!-- endbuild -->
+<!-- build:js scripts/TweenMax.min.js -->
+<script type="text/javascript" src="scripts/TweenMax.min.js"></script>
+<!-- endbuild -->
+<!-- build:js scripts/share.js -->
+<script type="text/javascript" src="scripts/share.js"></script>
 <!-- endbuild -->
 <!-- build:js scripts/cookbook.js -->
 <script type="text/javascript" src="scripts/cookbook.js"></script>
