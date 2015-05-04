@@ -4,8 +4,10 @@
     <file url="file://$PROJECT_DIR$/.gitignore" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/cookbook.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/step_detail.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/upload_cookbook.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/step_detail.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/cookbook.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/step_detail.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/upload_cookbook.css" charset="UTF-8" />
   </component>
 </project>

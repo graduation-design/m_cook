@@ -2,15 +2,20 @@ input, textarea {
   border: 1px solid #e1e1e1;
 }
 
-textarea{
+textarea {
   resize: none;
 }
 
-input:focus, textarea:focus{
+input:focus, textarea:focus {
   outline: none;
 }
 
+button:focus, button:active {
+  outline: 0;
+}
+
 .food_image {
+  position: relative;
   text-align: center;
   height: 3.6rem;
   line-height: 3.6rem;
@@ -23,6 +28,7 @@ input:focus, textarea:focus{
 }
 
 .wrapper {
+  padding-bottom: 1rem;
   margin: 0.18rem auto 0;
   width: 96%;
 }
@@ -60,6 +66,11 @@ h3 {
   width: 90%;
   height: 0.56rem;
   line-height: 0.58rem;
+  font-size: 0;
+}
+
+.one_material * {
+  font-size: 0.24rem;
 }
 
 .one_piece {
@@ -75,7 +86,7 @@ h3 {
   vertical-align: top;
 }
 
-.entypo-cancel-circled{
+.entypo-cancel-circled {
   font-size: 16px;
   opacity: 0.4;
   margin-left: 0.3rem;
@@ -87,7 +98,7 @@ h3 {
   opacity: 0.4;
 }
 
-.entypo-minus-circled{
+.entypo-minus-circled {
   font-size: 16px;
 }
 
@@ -96,13 +107,14 @@ h3 {
   margin-top: 1.32rem;
 }
 
-.food-step{
+.food-step {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .step-pic {
+  position: relative;
   height: 2rem;
   background-color: #ffebd7;
   width: 30%;
@@ -112,6 +124,7 @@ h3 {
   display: inline-block;
   float: left;
 }
+
 .step-num {
   background-color: #d9c4b0;
   width: 5%;
@@ -123,25 +136,24 @@ h3 {
   border: 1px solid #d9c4b0;
   float: left;
   margin-left: 0.12rem;
-  border-top-left-radius:3px ;
-  border-bottom-left-radius:3px ;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
 .step-text {
   width: 52%;
   margin: 0;
   height: 1.92rem;
-  border-top-right-radius:3px ;
-  border-bottom-right-radius:3px ;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
-
 
 .entypo-camera {
   font-size: 0.6rem;
   color: #d9c4b0;
 }
 
-.each-step{
+.each-step {
   margin-top: 0.12rem;
 }
 
@@ -164,7 +176,7 @@ h3 {
   border-radius: 3px;
 }
 
-.add{
+.add {
   background-color: #b3b3b3;
   color: #f1fdf0;
   height: 0.5rem;
@@ -176,7 +188,7 @@ h3 {
   margin-left: 4rem;
 }
 
-.edit{
+.edit {
   background-color: #b3b3b3;
   color: #f1fdf0;
   height: 0.5rem;
@@ -186,4 +198,13 @@ h3 {
   border-radius: 3px;
   margin-top: 0.24rem;
   margin-left: 4.6rem;
+}
+
+.file_selector {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
 }

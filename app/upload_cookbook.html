@@ -12,73 +12,103 @@
   <title>创建菜谱</title>
 </head>
 <body>
+
 <div class="food_image">
   <span class="entypo-camera" id="camera"></span>
+  <input id="main_pic_selector" class="file_selector" type="file" accept="image/*"/>
 </div>
 
 <div class="wrapper">
 
-  <div class="text">
-    <input placeholder="菜名" class="food_name">
-    <h3>美食故事</h3>
-    <textarea rows="3" class="food_intro"></textarea>
-  </div>
+  <form action="#" method="post" id="form">
+    <input id="uuid" type="hidden" name="uuid" value="132546"/>
 
-  <div class="material"><h3>食材</h3>
-    <ol class="food_material">
-      <li class="one_material">
-        <input placeholder="如 鸡蛋" class="one_piece"><input placeholder="如 一个" class="amount_material">
-        <span class="entypo-cancel-circled"></span>
-      </li>
-      <li class="one_material">
-        <input placeholder="如 鸡蛋" class="one_piece"><input placeholder="如 一个" class="amount_material">
-        <span class="entypo-cancel-circled"></span>
-      </li>
-      <li class="one_material">
-        <input placeholder="如 鸡蛋" class="one_piece"><input placeholder="如 一个" class="amount_material">
-        <span class="entypo-cancel-circled"></span>
-      </li>
-    </ol>
-    <button type="button" class="add">添加食材</button>
-  </div>
+    <div class="text">
+      <input name="cookbook_title" placeholder="菜名" class="food_name">
 
-  <div class="step">
-    <h3>做法</h3>
-    <ol class="food-step">
-      <li class="each-step">
-        <div class="step-pic"><span class="entypo-camera"></span></div>
-        <div class="step-num">1</div>
-        <textarea rows="5" class="step-text"></textarea>
-        <div class="btn">
-          <div class="entypo-minus-circled"></div>
-          <div class="entypo-plus-circled"></div>
-        </div>
-      </li>
-      <li class="each-step">
-        <div class="step-pic"><span class="entypo-camera"></span></div>
-        <div class="step-num">2</div>
-        <textarea rows="5" class="step-text"></textarea>
-        <div class="btn">
-          <div class="entypo-minus-circled"></div>
-          <div class="entypo-plus-circled"></div>
-        </div>
-      </li>
-      <li class="each-step">
-        <div class="step-pic"><span class="entypo-camera"></span></div>
-        <div class="step-num">3</div>
-        <textarea rows="5" class="step-text"></textarea>
-        <div class="btn">
-           <div class="entypo-minus-circled"></div>
-           <div class="entypo-plus-circled"></div>
-        </div>
-      </li>
-      <button type="button" class="edit">编辑步骤</button>
-    </ol>
-  </div>
+      <h3>美食故事</h3>
+      <textarea name="introduction" rows="3" class="food_intro"></textarea>
+    </div>
 
-  <h3>小贴士</h3>
-  <textarea rows="3" class="tip"></textarea>
-  <button type="button" class="release">发 布</button>
+    <div class="material"><h3>食材</h3>
+      <ul class="food_material">
+        <li class="one_material">
+          <input name="food_name" placeholder="如 鸡蛋" class="one_piece">
+          <input name="food_quantity" placeholder="如 一个" class="amount_material">
+          <span class="entypo-cancel-circled delete"></span>
+        </li>
+        <li class="one_material">
+          <input name="food_name" placeholder="如 鸡蛋" class="one_piece">
+          <input name="food_quantity" placeholder="如 一个" class="amount_material">
+          <span class="entypo-cancel-circled delete"></span>
+        </li>
+        <li class="one_material">
+          <input name="food_name" placeholder="如 鸡蛋" class="one_piece">
+          <input name="food_quantity" placeholder="如 一个" class="amount_material">
+          <span class="entypo-cancel-circled delete"></span>
+        </li>
+      </ul>
+      <button type="button" class="add">添加食材</button>
+    </div>
+
+    <div class="step">
+      <h3>做法</h3>
+      <ol class="food-step">
+        <li class="each-step">
+          <div class="step-pic">
+            <span class="entypo-camera"></span>
+            <input class="file_selector" type="file" accept="image/*"/>
+          </div>
+          <div class="step-num">1</div>
+          <textarea name="step_content" rows="5" class="step-text"></textarea>
+
+          <div class="btn">
+            <div class="entypo-minus-circled"></div>
+            <div class="entypo-plus-circled"></div>
+          </div>
+        </li>
+        <li class="each-step">
+          <div class="step-pic">
+            <span class="entypo-camera"></span>
+            <input class="file_selector" type="file" accept="image/*"/>
+          </div>
+          <div class="step-num">2</div>
+          <textarea name="step_content" rows="5" class="step-text"></textarea>
+
+          <div class="btn">
+            <div class="entypo-minus-circled"></div>
+            <div class="entypo-plus-circled"></div>
+          </div>
+        </li>
+        <li class="each-step">
+          <div class="step-pic">
+            <span class="entypo-camera"></span>
+            <input class="file_selector" type="file" accept="image/*"/>
+          </div>
+          <div class="step-num">3</div>
+          <textarea name="step_content" rows="5" class="step-text"></textarea>
+
+          <div class="btn">
+            <div class="entypo-minus-circled"></div>
+            <div class="entypo-plus-circled"></div>
+          </div>
+        </li>
+        <button type="button" class="edit">编辑步骤</button>
+      </ol>
+    </div>
+
+    <h3>小贴士</h3>
+    <textarea name="tips" rows="3" class="tip"></textarea>
+    <button type="button" class="release">发 布</button>
+  </form>
 </div>
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+<!-- build:js scripts/upload_cookbook.js -->
+<script type="text/javascript" src="scripts/upload_cookbook.js"></script>
+<!-- endbuild -->
 </body>
 </html>

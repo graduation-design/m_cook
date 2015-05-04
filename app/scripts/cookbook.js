@@ -9,13 +9,13 @@ $(function () {
 
     if (content === '') return;
 
-    $.getJSON('#', {comment: content}, function () {
+    $.getJSON($('#J_send_comment_url'), {comment: content}, function () {
       editor.text('');
     });
   });
 
   $('.more').on('click', function(){
-    $.getJSON('#', function(data){
+    $.getJSON('#J_more_comment_url', function(data){
       console.log(data);
     });
   });
