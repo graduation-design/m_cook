@@ -102,7 +102,7 @@ function imgUpload(fileInput, uuid) {
   formData.append('img', fileInput[0].files[0]);
 
   $.ajax({
-    url: $('#J_pic_upload_url'),
+    url: $('#J_pic_upload_url').val(),
     type: 'POST',
     data: formData,
     cache: false,

@@ -1,0 +1,85 @@
+body {
+  background-color: #f8f6f5;
+}
+
+.wrapper {
+  padding: 4%;
+}
+
+.list_section {
+  margin-bottom: 1rem;
+}
+
+.list_section ul {
+  /*background-color: #eeeeee;*/
+  /*padding: 0 0.12rem 0.12rem;*/
+}
+
+.list_section li {
+  position: relative;
+  margin-top: 0.12rem;
+  padding-top: 0.12rem;
+  border-top: 1px solid #ccc;
+  font-size: 0;
+}
+
+.list_section li:first-child {
+  border-top: none;
+}
+
+.list_section .section_header {
+  margin: 0;
+  font-size: 0.48rem;
+}
+
+.list_section li > * {
+  vertical-align: top;
+  display: inline-block;
+  font-size: 0.36rem;
+}
+
+.list_section li .pic_wrap {
+  width: 24%;
+  height: 24%;
+}
+
+.list_section li .info {
+  width: 76%;
+}
+
+.list_section .info .from{
+  color: #999;
+  font-size: 0.2rem;
+  margin-top: 0.2rem;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.item_pic {
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
+}
+
+.list_section .the_heat {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #ba906a;
+  font-size: 0.24rem;
+  width: 76%;
+  text-align: right;
+}
+
+.list_section .the_heat > *{
+  display: inline-block;
+  padding: 0 0.24rem;
+}
+
+.list_section .the_heat .num {
+  font-weight: bold;
+}
