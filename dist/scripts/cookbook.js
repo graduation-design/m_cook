@@ -1,1 +1,1 @@
-$(function(){$("#one").on("click",function(){$(".big-pic").css("display","block")})});
+$(function(){$("#one").on("click",function(){$(".big-pic").css("display","block")}),$(".send_comment").on("click",function(){var n=$("#comment_editor"),c=n.text().trim();""!==c&&$.getJSON("#",{comment:c},function(){n.text("")})}),$(".more").on("click",function(){$.getJSON("#",function(n){console.log(n)})})});
