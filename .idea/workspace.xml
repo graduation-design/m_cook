@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23e9668d-21da-4272-bf8a-747af1e0a80c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/comments.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/comments.html" />
       <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\scripts\TweenMax.min.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\scripts\share.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/common.css" afterPath="$PROJECT_DIR$/app/styles/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/cookbook.css" afterPath="$PROJECT_DIR$/app/styles/cookbook.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cookbook.html" afterPath="$PROJECT_DIR$/app/cookbook.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/cookbook.js" afterPath="$PROJECT_DIR$/app/scripts/cookbook.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/upload_cookbook.css" afterPath="$PROJECT_DIR$/app/styles/upload_cookbook.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/upload_cookbook.html" afterPath="$PROJECT_DIR$/app/upload_cookbook.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/upload_cookbook.js" afterPath="$PROJECT_DIR$/app/scripts/upload_cookbook.js" />
@@ -35,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="upload_cookbook.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="upload_cookbook.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/upload_cookbook.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36151603">
-              <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+            <state vertical-scroll-proportion="-2.9411764">
+              <caret line="22" column="43" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -49,36 +42,36 @@
         <entry file="file://$PROJECT_DIR$/app/styles/upload_cookbook.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="95" column="15" selection-start-line="95" selection-start-column="15" selection-end-line="95" selection-end-column="15" />
+              <caret line="172" column="22" selection-start-line="172" selection-start-column="22" selection-end-line="172" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upload_cookbook.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="upload_cookbook.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/upload_cookbook.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.411765">
-              <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.45335278">
+              <caret line="106" column="19" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
               <folding>
-                <marker date="1430727781203" expanded="true" signature="1198:1264" placeholder="..." />
-                <marker date="1430727781203" expanded="true" signature="1198:1341" placeholder="..." />
-                <marker date="1430727781203" expanded="true" signature="1198:1398" placeholder="..." />
-                <marker date="1430727781203" expanded="true" signature="1198:1410" placeholder="..." />
-                <marker date="1430727781203" expanded="true" signature="1511:1538" placeholder="..." />
-                <marker date="1430727781203" expanded="true" signature="1511:1584" placeholder="..." />
-                <marker date="1430727781203" expanded="true" signature="1511:1649" placeholder="..." />
-                <marker date="1430727781203" expanded="true" signature="1511:1661" placeholder="..." />
-                <marker date="1430727781203" expanded="true" signature="1511:1696" placeholder="..." />
-                <marker date="1430727781203" expanded="true" signature="1511:1770" placeholder="..." />
-                <marker date="1430727781203" expanded="true" signature="1511:1771" placeholder="..." />
-                <marker date="1430727781203" expanded="true" signature="1511:1793" placeholder="..." />
-                <marker date="1430727781203" expanded="true" signature="1511:1848" placeholder="..." />
-                <marker date="1430727781203" expanded="true" signature="1511:1899" placeholder="..." />
-                <marker date="1430727781203" expanded="true" signature="1511:1911" placeholder="..." />
-                <marker date="1430727781203" expanded="true" signature="1511:1923" placeholder="..." />
-                <marker date="1430727781203" expanded="true" signature="1539:1584" placeholder="..." />
-                <marker date="1430727781203" expanded="true" signature="1794:1848" placeholder="..." />
+                <marker date="1430728853127" expanded="true" signature="1204:1270" placeholder="..." />
+                <marker date="1430728853127" expanded="true" signature="1204:1347" placeholder="..." />
+                <marker date="1430728853127" expanded="true" signature="1204:1404" placeholder="..." />
+                <marker date="1430728853127" expanded="true" signature="1204:1416" placeholder="..." />
+                <marker date="1430728853127" expanded="true" signature="1517:1544" placeholder="..." />
+                <marker date="1430728853127" expanded="true" signature="1517:1590" placeholder="..." />
+                <marker date="1430728853127" expanded="true" signature="1517:1655" placeholder="..." />
+                <marker date="1430728853127" expanded="true" signature="1517:1667" placeholder="..." />
+                <marker date="1430728853127" expanded="true" signature="1517:1702" placeholder="..." />
+                <marker date="1430728853127" expanded="true" signature="1517:1776" placeholder="..." />
+                <marker date="1430728853127" expanded="true" signature="1517:1777" placeholder="..." />
+                <marker date="1430728853127" expanded="true" signature="1517:1799" placeholder="..." />
+                <marker date="1430728853127" expanded="true" signature="1517:1854" placeholder="..." />
+                <marker date="1430728853127" expanded="true" signature="1517:1905" placeholder="..." />
+                <marker date="1430728853127" expanded="true" signature="1517:1917" placeholder="..." />
+                <marker date="1430728853127" expanded="true" signature="1517:1929" placeholder="..." />
+                <marker date="1430728853127" expanded="true" signature="1545:1590" placeholder="..." />
+                <marker date="1430728853127" expanded="true" signature="1800:1854" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -106,8 +99,8 @@
         <option value="$PROJECT_DIR$/app/comments.html" />
         <option value="$PROJECT_DIR$/app/styles/comments.css" />
         <option value="$PROJECT_DIR$/app/styles/upload_cookbook.css" />
-        <option value="$PROJECT_DIR$/app/scripts/upload_cookbook.js" />
         <option value="$PROJECT_DIR$/app/upload_cookbook.html" />
+        <option value="$PROJECT_DIR$/app/scripts/upload_cookbook.js" />
       </list>
     </option>
   </component>
@@ -361,9 +354,6 @@
           <caret line="0" column="1326" selection-start-line="0" selection-start-column="1326" selection-end-line="0" selection-end-column="1326" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#li#2;n#ul#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -440,46 +430,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/upload_cookbook.js">
+    <entry file="file://$PROJECT_DIR$/app/upload_cookbook.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.411765">
-          <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
-          <folding>
-            <marker date="1430727781203" expanded="true" signature="1198:1264" placeholder="..." />
-            <marker date="1430727781203" expanded="true" signature="1198:1341" placeholder="..." />
-            <marker date="1430727781203" expanded="true" signature="1198:1398" placeholder="..." />
-            <marker date="1430727781203" expanded="true" signature="1198:1410" placeholder="..." />
-            <marker date="1430727781203" expanded="true" signature="1511:1538" placeholder="..." />
-            <marker date="1430727781203" expanded="true" signature="1511:1584" placeholder="..." />
-            <marker date="1430727781203" expanded="true" signature="1511:1649" placeholder="..." />
-            <marker date="1430727781203" expanded="true" signature="1511:1661" placeholder="..." />
-            <marker date="1430727781203" expanded="true" signature="1511:1696" placeholder="..." />
-            <marker date="1430727781203" expanded="true" signature="1511:1770" placeholder="..." />
-            <marker date="1430727781203" expanded="true" signature="1511:1771" placeholder="..." />
-            <marker date="1430727781203" expanded="true" signature="1511:1793" placeholder="..." />
-            <marker date="1430727781203" expanded="true" signature="1511:1848" placeholder="..." />
-            <marker date="1430727781203" expanded="true" signature="1511:1899" placeholder="..." />
-            <marker date="1430727781203" expanded="true" signature="1511:1911" placeholder="..." />
-            <marker date="1430727781203" expanded="true" signature="1511:1923" placeholder="..." />
-            <marker date="1430727781203" expanded="true" signature="1539:1584" placeholder="..." />
-            <marker date="1430727781203" expanded="true" signature="1794:1848" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="-2.9411764">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/upload_cookbook.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="15" selection-start-line="95" selection-start-column="15" selection-end-line="95" selection-end-column="15" />
+          <caret line="172" column="22" selection-start-line="172" selection-start-column="22" selection-end-line="172" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/upload_cookbook.html">
+    <entry file="file://$PROJECT_DIR$/app/scripts/upload_cookbook.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36151603">
-          <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
-          <folding />
+        <state vertical-scroll-proportion="0.45335278">
+          <caret line="106" column="19" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
+          <folding>
+            <marker date="1430728853127" expanded="true" signature="1204:1270" placeholder="..." />
+            <marker date="1430728853127" expanded="true" signature="1204:1347" placeholder="..." />
+            <marker date="1430728853127" expanded="true" signature="1204:1404" placeholder="..." />
+            <marker date="1430728853127" expanded="true" signature="1204:1416" placeholder="..." />
+            <marker date="1430728853127" expanded="true" signature="1517:1544" placeholder="..." />
+            <marker date="1430728853127" expanded="true" signature="1517:1590" placeholder="..." />
+            <marker date="1430728853127" expanded="true" signature="1517:1655" placeholder="..." />
+            <marker date="1430728853127" expanded="true" signature="1517:1667" placeholder="..." />
+            <marker date="1430728853127" expanded="true" signature="1517:1702" placeholder="..." />
+            <marker date="1430728853127" expanded="true" signature="1517:1776" placeholder="..." />
+            <marker date="1430728853127" expanded="true" signature="1517:1777" placeholder="..." />
+            <marker date="1430728853127" expanded="true" signature="1517:1799" placeholder="..." />
+            <marker date="1430728853127" expanded="true" signature="1517:1854" placeholder="..." />
+            <marker date="1430728853127" expanded="true" signature="1517:1905" placeholder="..." />
+            <marker date="1430728853127" expanded="true" signature="1517:1917" placeholder="..." />
+            <marker date="1430728853127" expanded="true" signature="1517:1929" placeholder="..." />
+            <marker date="1430728853127" expanded="true" signature="1545:1590" placeholder="..." />
+            <marker date="1430728853127" expanded="true" signature="1800:1854" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

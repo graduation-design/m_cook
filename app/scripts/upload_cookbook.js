@@ -10,7 +10,7 @@ $(function () {
 
 function bindMaterialEvent() {
   var $material = $('.food_material');
-  $material.on('click', '.add', function () {
+  $('.material .add').on('click', function () {
     addMaterial();
   });
 
@@ -37,10 +37,10 @@ function bindStepEvent() {
     $(ev.target).siblings('.btn').fadeOut();
   });
 
-  $steps.on('click', '.add', function(ev){
+  $steps.on('click', '.add', function (ev) {
     addStep($(ev.target).parents('li'));
   });
-  $steps.on('click', '.delete', function(ev){
+  $steps.on('click', '.delete', function (ev) {
     deleteStep($(ev.target).parents('li'));
   })
 }
@@ -73,17 +73,17 @@ function addStep(tgt) {
   resetStepNum();
 }
 
-function deleteStep(step){
-  if($('.each-step').length <= 1) return;
+function deleteStep(step) {
+  if ($('.each-step').length <= 1) return;
   step.remove();
   resetStepNum();
 }
 
-function resetStepNum(){
+function resetStepNum() {
   var numDom = $('.step .step-num');
 
-  for(var i = 0; i < numDom.length; i++){
-    $(numDom[i]).text(i+1);
+  for (var i = 0; i < numDom.length; i++) {
+    $(numDom[i]).text(i + 1);
   }
 }
 
@@ -102,7 +102,7 @@ function imgUpload(fileInput, uuid) {
   formData.append('img', fileInput[0].files[0]);
 
   $.ajax({
-    url: 'submit.php?files',
+    url: $('#J_pic_upload_url'),
     type: 'POST',
     data: formData,
     cache: false,

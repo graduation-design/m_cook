@@ -20,6 +20,7 @@
 
 <div class="wrapper">
 
+  <input type="hidden" id="J_pic_upload_url" value="http"/>
   <form action="#" method="post" id="form">
     <input id="uuid" type="hidden" name="uuid" value="132546"/>
 
@@ -100,7 +101,10 @@
 
     <h3>小贴士</h3>
     <textarea name="tips" rows="3" class="tip"></textarea>
-    <button type="submit" class="release">发 布</button>
+
+    <div class="release_wrap">
+      <button type="submit" class="release">发 布</button>
+    </div>
   </form>
 </div>
 <!-- build:js scripts/vendor.js -->

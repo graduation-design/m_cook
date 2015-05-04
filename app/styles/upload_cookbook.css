@@ -100,7 +100,7 @@ h3 {
   display: none;
   position: absolute;
   top: 0;
-  right: 0.12rem;
+  right: 0.16rem;
   height: 2rem;
   font-size: 0.48rem;
   opacity: 0.4;
@@ -168,21 +168,25 @@ h3 {
   height: 1.2rem;
 }
 
+.release_wrap {
+  text-align: center;
+  padding-top: 0.24rem;
+}
+
 .release {
   background-color: #fd4644;
   color: #f1fdf0;
   height: 0.6rem;
   line-height: 0.6rem;
   width: 60%;
-  margin-top: 0.12rem;
-  margin-left: 1.1rem;
   text-align: center;
   border: solid 1px #e1e1e1;
   border-radius: 3px;
 }
 .material .add_btn_wrap{
-  text-align: right;
-  padding: 0.24rem 0.24rem 0 0;
+  text-align: center;
+  margin-top: 0.24rem;
+  margin-top: 0.24rem;
 }
 .material .add {
   background-color: #b3b3b3;
