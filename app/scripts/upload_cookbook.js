@@ -97,6 +97,8 @@ function imgUpload(fileInput, uuid) {
     index = fileInput.parents('li').index() + 1;
   }
 
+  readURL(fileInput[0], fileInput.siblings('.pic_placeholder'));
+
   formData.append('uuid', uuid);
   formData.append('index', index);
   formData.append('img', fileInput[0].files[0]);
@@ -112,4 +114,17 @@ function imgUpload(fileInput, uuid) {
     success: function (data, textStatus, jqXHR) {
     }
   });
+}
+
+function readURL(input, $tgtImg) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+      $tgtImg.attr('src', e.target.result);
+      $tgtImg.css('display', 'block');
+    };
+
+    reader.readAsDataURL(input.files[0]);
+  }
 }
