@@ -62,6 +62,7 @@ h3 {
 }
 
 .one_material {
+  position: relative;
   margin: 0.12rem auto 0;
   width: 90%;
   height: 0.56rem;
@@ -74,7 +75,7 @@ h3 {
 }
 
 .one_piece {
-  width: 54%;
+  width: 66%;
   height: 0.48rem;
   vertical-align: top;
 }
@@ -86,25 +87,28 @@ h3 {
   vertical-align: top;
 }
 
-.entypo-cancel-circled {
-  font-size: 16px;
+.food_material .delete {
+  display: none;
+  position: absolute;
+  right: -0.36rem;
+  top: 0;
+  font-size: 0.48rem;
   opacity: 0.4;
-  margin-left: 0.3rem;
 }
 
-.btn {
-  float: right;
+.step .btn {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0.12rem;
   height: 2rem;
+  font-size: 0.48rem;
   opacity: 0.4;
 }
 
-.entypo-minus-circled {
-  font-size: 16px;
-}
-
-.entypo-plus-circled {
-  font-size: 16px;
-  margin-top: 1.32rem;
+.step .btn .add {
+  position: absolute;
+  bottom: 0;
 }
 
 .food-step {
@@ -141,19 +145,20 @@ h3 {
 }
 
 .step-text {
-  width: 52%;
+  width: 59%;
   margin: 0;
   height: 1.92rem;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
 
-.entypo-camera {
+.fontawesome-camera {
   font-size: 0.6rem;
   color: #d9c4b0;
 }
 
 .each-step {
+  position: relative;
   margin-top: 0.12rem;
 }
 
@@ -175,29 +180,19 @@ h3 {
   border: solid 1px #e1e1e1;
   border-radius: 3px;
 }
-
-.add {
-  background-color: #b3b3b3;
-  color: #f1fdf0;
-  height: 0.5rem;
-  line-height: 0.5rem;
-  width: 22%;
-  border: solid 1px #e1e1e1;
-  border-radius: 3px;
-  margin-top: 0.24rem;
-  margin-left: 4rem;
+.material .add_btn_wrap{
+  text-align: right;
+  padding: 0.24rem 0.24rem 0 0;
 }
-
-.edit {
+.material .add {
   background-color: #b3b3b3;
   color: #f1fdf0;
+  width: 28%;
   height: 0.5rem;
   line-height: 0.5rem;
-  width: 22%;
   border: solid 1px #e1e1e1;
   border-radius: 3px;
-  margin-top: 0.24rem;
-  margin-left: 4.6rem;
+  padding: 0;
 }
 
 .file_selector {

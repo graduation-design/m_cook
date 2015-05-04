@@ -32,23 +32,25 @@
 
     <div class="material"><h3>食材</h3>
       <ul class="food_material">
-        <li class="one_material">
+        <li class="one_material" tabindex="0">
           <input name="food_name" placeholder="如 鸡蛋" class="one_piece">
           <input name="food_quantity" placeholder="如 一个" class="amount_material">
-          <span class="fontawesome-cancel-circled delete"></span>
+          <span class="fontawesome-minus-sign delete"></span>
         </li>
-        <li class="one_material">
+        <li class="one_material" tabindex="0">
           <input name="food_name" placeholder="如 鸡蛋" class="one_piece">
           <input name="food_quantity" placeholder="如 一个" class="amount_material">
-          <span class="fontawesome-cancel-circled delete"></span>
+          <span class="fontawesome-minus-sign delete"></span>
         </li>
-        <li class="one_material">
+        <li class="one_material" tabindex="0">
           <input name="food_name" placeholder="如 鸡蛋" class="one_piece">
           <input name="food_quantity" placeholder="如 一个" class="amount_material">
-          <span class="fontawesome-cancel-circled delete"></span>
+          <span class="fontawesome-minus-sign delete"></span>
         </li>
       </ul>
-      <button type="button" class="add">添加食材</button>
+      <div class="add_btn_wrap">
+        <button type="button" class="add"><span class="fontawesome-plus"></span>添加食材</button>
+      </div>
     </div>
 
     <div class="step">
@@ -63,8 +65,8 @@
           <textarea name="step_content" rows="5" class="step-text"></textarea>
 
           <div class="btn">
-            <div class="fontawesome-minus-circled"></div>
-            <div class="fontawesome-plus-circled"></div>
+            <div class="fontawesome-minus-sign delete"></div>
+            <div class="fontawesome-plus-sign add"></div>
           </div>
         </li>
         <li class="each-step">
@@ -76,8 +78,8 @@
           <textarea name="step_content" rows="5" class="step-text"></textarea>
 
           <div class="btn">
-            <div class="fontawesome-minus-circled"></div>
-            <div class="fontawesome-plus-circled"></div>
+            <div class="fontawesome-minus-sign delete"></div>
+            <div class="fontawesome-plus-sign add"></div>
           </div>
         </li>
         <li class="each-step">
@@ -89,17 +91,16 @@
           <textarea name="step_content" rows="5" class="step-text"></textarea>
 
           <div class="btn">
-            <div class="fontawesome-minus-circled"></div>
-            <div class="fontawesome-plus-circled"></div>
+            <div class="fontawesome-minus-sign delete"></div>
+            <div class="fontawesome-plus-sign add"></div>
           </div>
         </li>
-        <button type="button" class="edit">编辑步骤</button>
       </ol>
     </div>
 
     <h3>小贴士</h3>
     <textarea name="tips" rows="3" class="tip"></textarea>
-    <button type="button" class="release">发 布</button>
+    <button type="submit" class="release">发 布</button>
   </form>
 </div>
 <!-- build:js scripts/vendor.js -->

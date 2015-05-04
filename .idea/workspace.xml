@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23e9668d-21da-4272-bf8a-747af1e0a80c" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\app\scripts\TweenMax.min.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/comments.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/comments.html" />
       <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\scripts\TweenMax.min.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\scripts\share.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/common.css" afterPath="$PROJECT_DIR$/app/styles/common.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/cookbook.css" afterPath="$PROJECT_DIR$/app/styles/cookbook.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cookbook.html" afterPath="$PROJECT_DIR$/app/cookbook.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/cookbook.js" afterPath="$PROJECT_DIR$/app/scripts/cookbook.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/upload_cookbook.css" afterPath="$PROJECT_DIR$/app/styles/upload_cookbook.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/upload_cookbook.html" afterPath="$PROJECT_DIR$/app/upload_cookbook.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/upload_cookbook.js" afterPath="$PROJECT_DIR$/app/scripts/upload_cookbook.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="m_cook.iws" />
@@ -30,21 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="cookbook.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/cookbook.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.617647">
-              <caret line="129" column="8" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="upload_cookbook.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="upload_cookbook.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/upload_cookbook.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.7096775">
-              <caret line="90" column="27" selection-start-line="90" selection-start-column="27" selection-end-line="90" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.36151603">
+              <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -54,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/app/styles/upload_cookbook.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="73" column="1" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
+              <caret line="95" column="15" selection-start-line="95" selection-start-column="15" selection-end-line="95" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -63,26 +58,27 @@
       <file leaf-file-name="upload_cookbook.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/upload_cookbook.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.764706">
-              <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+            <state vertical-scroll-proportion="-8.411765">
+              <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
               <folding>
-                <marker date="1430708982692" expanded="true" signature="421:487" placeholder="..." />
-                <marker date="1430708982692" expanded="true" signature="421:564" placeholder="..." />
-                <marker date="1430708982692" expanded="true" signature="421:620" placeholder="..." />
-                <marker date="1430708982692" expanded="true" signature="421:632" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cookbook.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/scripts/cookbook.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3125">
-              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-              <folding>
-                <marker date="1430702698212" expanded="false" signature="652:674" placeholder="..." />
-                <marker date="1430702698212" expanded="true" signature="754:783" placeholder="..." />
+                <marker date="1430727781203" expanded="true" signature="1198:1264" placeholder="..." />
+                <marker date="1430727781203" expanded="true" signature="1198:1341" placeholder="..." />
+                <marker date="1430727781203" expanded="true" signature="1198:1398" placeholder="..." />
+                <marker date="1430727781203" expanded="true" signature="1198:1410" placeholder="..." />
+                <marker date="1430727781203" expanded="true" signature="1511:1538" placeholder="..." />
+                <marker date="1430727781203" expanded="true" signature="1511:1584" placeholder="..." />
+                <marker date="1430727781203" expanded="true" signature="1511:1649" placeholder="..." />
+                <marker date="1430727781203" expanded="true" signature="1511:1661" placeholder="..." />
+                <marker date="1430727781203" expanded="true" signature="1511:1696" placeholder="..." />
+                <marker date="1430727781203" expanded="true" signature="1511:1770" placeholder="..." />
+                <marker date="1430727781203" expanded="true" signature="1511:1771" placeholder="..." />
+                <marker date="1430727781203" expanded="true" signature="1511:1793" placeholder="..." />
+                <marker date="1430727781203" expanded="true" signature="1511:1848" placeholder="..." />
+                <marker date="1430727781203" expanded="true" signature="1511:1899" placeholder="..." />
+                <marker date="1430727781203" expanded="true" signature="1511:1911" placeholder="..." />
+                <marker date="1430727781203" expanded="true" signature="1511:1923" placeholder="..." />
+                <marker date="1430727781203" expanded="true" signature="1539:1584" placeholder="..." />
+                <marker date="1430727781203" expanded="true" signature="1794:1848" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -102,14 +98,16 @@
         <option value="$PROJECT_DIR$/app/step_detail.html" />
         <option value="$PROJECT_DIR$/app/styles/step_detail.css" />
         <option value="$PROJECT_DIR$/app/scripts/share.js" />
-        <option value="$PROJECT_DIR$/app/styles/cookbook.css" />
-        <option value="$PROJECT_DIR$/app/scripts/cookbook.js" />
         <option value="$PROJECT_DIR$/app/scripts/upload_cookbook.html" />
+        <option value="$PROJECT_DIR$/app/scripts/cookbook.js" />
+        <option value="$PROJECT_DIR$/app/cookbook.html" />
+        <option value="$PROJECT_DIR$/app/styles/cookbook.css" />
+        <option value="$PROJECT_DIR$/app/styles/common.css" />
+        <option value="$PROJECT_DIR$/app/comments.html" />
+        <option value="$PROJECT_DIR$/app/styles/comments.css" />
         <option value="$PROJECT_DIR$/app/styles/upload_cookbook.css" />
         <option value="$PROJECT_DIR$/app/scripts/upload_cookbook.js" />
-        <option value="$PROJECT_DIR$/app/styles/common.css" />
         <option value="$PROJECT_DIR$/app/upload_cookbook.html" />
-        <option value="$PROJECT_DIR$/app/cookbook.html" />
       </list>
     </option>
   </component>
@@ -206,24 +204,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="m_cook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="m_cook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -291,7 +271,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19405815" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19342604" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -325,9 +305,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -369,14 +347,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/cookbook.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="242" column="1" selection-start-line="242" selection-start-column="1" selection-end-line="242" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/scripts/vendor.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36115107">
@@ -398,14 +368,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/upload_cookbook.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="1" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/cooking/app/elements/upload-form/upload-form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.6764708">
@@ -416,61 +378,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/upload_cookbook.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7096775">
-          <caret line="90" column="27" selection-start-line="90" selection-start-column="27" selection-end-line="90" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/cookbook.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.617647">
-          <caret line="129" column="8" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/upload_cookbook.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.764706">
-          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
-          <folding>
-            <marker date="1430708982692" expanded="true" signature="421:487" placeholder="..." />
-            <marker date="1430708982692" expanded="true" signature="421:564" placeholder="..." />
-            <marker date="1430708982692" expanded="true" signature="421:620" placeholder="..." />
-            <marker date="1430708982692" expanded="true" signature="421:632" placeholder="..." />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/cookbook.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3125">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/comments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.411765">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="19" />
           <folding>
-            <marker date="1430702698212" expanded="false" signature="652:674" placeholder="..." />
-            <marker date="1430702698212" expanded="true" signature="754:783" placeholder="..." />
+            <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/comments.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06944445">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/cookbook.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.548611">
+          <caret line="131" column="1" selection-start-line="131" selection-start-column="1" selection-end-line="131" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/cookbook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54268295">
+          <caret line="85" column="19" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24305555">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/upload_cookbook.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.411765">
+          <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
+          <folding>
+            <marker date="1430727781203" expanded="true" signature="1198:1264" placeholder="..." />
+            <marker date="1430727781203" expanded="true" signature="1198:1341" placeholder="..." />
+            <marker date="1430727781203" expanded="true" signature="1198:1398" placeholder="..." />
+            <marker date="1430727781203" expanded="true" signature="1198:1410" placeholder="..." />
+            <marker date="1430727781203" expanded="true" signature="1511:1538" placeholder="..." />
+            <marker date="1430727781203" expanded="true" signature="1511:1584" placeholder="..." />
+            <marker date="1430727781203" expanded="true" signature="1511:1649" placeholder="..." />
+            <marker date="1430727781203" expanded="true" signature="1511:1661" placeholder="..." />
+            <marker date="1430727781203" expanded="true" signature="1511:1696" placeholder="..." />
+            <marker date="1430727781203" expanded="true" signature="1511:1770" placeholder="..." />
+            <marker date="1430727781203" expanded="true" signature="1511:1771" placeholder="..." />
+            <marker date="1430727781203" expanded="true" signature="1511:1793" placeholder="..." />
+            <marker date="1430727781203" expanded="true" signature="1511:1848" placeholder="..." />
+            <marker date="1430727781203" expanded="true" signature="1511:1899" placeholder="..." />
+            <marker date="1430727781203" expanded="true" signature="1511:1911" placeholder="..." />
+            <marker date="1430727781203" expanded="true" signature="1511:1923" placeholder="..." />
+            <marker date="1430727781203" expanded="true" signature="1539:1584" placeholder="..." />
+            <marker date="1430727781203" expanded="true" signature="1794:1848" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/upload_cookbook.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="95" column="15" selection-start-line="95" selection-start-column="15" selection-end-line="95" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/upload_cookbook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36151603">
+          <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>

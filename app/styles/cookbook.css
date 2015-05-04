@@ -1,13 +1,3 @@
-html {
-  font-size: 312.5%;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  font-size: 0.36rem;
-}
-
 #main_pic {
   height: 0;
   width: 100%;
@@ -129,12 +119,6 @@ ul, ol {
   display: inline-block;
 }
 
-.talk {
-  border-bottom: 1px solid #e1e1e1;
-  margin-bottom: 0.12rem;
-  font-size: 0;
-}
-
 .step-pic {
   padding-bottom: 36%;
   height: 0;
@@ -145,84 +129,6 @@ ul, ol {
 
 .step-pic img {
   width: 100%;
-}
-
-.talk-pic-container {
-  width: 20%;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.talk-pic {
-  width: 33px;
-  height: 33px;
-  background-size: 33px auto;
-  border-radius: 33px;
-  border: 2px solid #fff;
-  margin-top: 0;
-  display: inline-block;
-}
-
-.talk-text {
-  width: 80%;
-  display: inline-block;
-  margin: 0.08rem 0 0.12rem;
-  font-size: 0.3rem
-}
-
-.ayname {
-  color: #f66061;
-  font-size: 0.3rem
-}
-
-.time {
-  text-align: right;
-}
-
-.aytime {
-  color: #b3b3b3;
-  font-size: 0.3rem;
-  float: right;
-}
-
-.more {
-  text-align: center;
-  margin-bottom: 0.48rem;
-}
-
-.btn-talk {
-  width: 50px;
-  height: 30px;
-  font-size: 0.24rem;
-  border-radius: 12px;
-  border: 2px solid #fff;
-}
-
-.comment_editor {
-  border: 1px solid #ccc;
-  border-top: none;
-  width: 84%;
-  vertical-align: text-bottom;
-}
-
-.comment_editor p {
-  width: 100%;
-  background-color: #fafafa;
-  margin-bottom: 0.1rem;
-  padding: 0 2%;
-  margin-left: -2%;
-  margin-top: 0;
-}
-
-.comment_editor p:focus {
-  outline: none;
-}
-
-.entypo-paper-plane {
-  font-size: 0.36rem;
-  position: absolute;
-  right: 0;
-  bottom: 0;
 }
 
 .big-pic {
@@ -236,8 +142,4 @@ ul, ol {
 .big-pic img {
   height: 100%;
   width: 100%;
-}
-
-.comment {
-  position: relative;
 }

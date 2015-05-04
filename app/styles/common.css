@@ -5,6 +5,11 @@
   font-family: 'FontAwesome', sans-serif;
 }
 
+ul,ol{
+  padding: 0;
+  list-style: none;
+}
+
 html {
   font-size: 312.5%;
   height: 100%;
@@ -13,7 +18,7 @@ html {
 body {
   background: #fafafa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.24rem;
+  font-size: 0.36rem;
   color: #333;
   height: 100%;
   padding: 0;
