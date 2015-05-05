@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles/common.css">
   <!-- endbuild -->
   <!-- build:css styles/upload_cookbook.css -->
-  <link rel="stylesheet" href="styles/upload_cookbook.css"/>
+  <link rel="stylesheet" href="styles/upload_knowledge.css"/>
   <!-- endbuild -->
   <title>创建菜谱</title>
 </head>
@@ -26,10 +26,15 @@
     <input id="uuid" type="hidden" name="uuid" value="132546"/>
 
     <div class="text">
-      <input name="cookbook_title" placeholder="菜名" class="food_name">
+      <input name="knowledge_title" placeholder="标题" class="knowledge_name">
 
-      <h3>美食故事</h3>
-      <textarea name="introduction" rows="3" class="food_intro"></textarea>
+      <h3>内容</h3>
+      <div id="content_editor" contenteditable="true"></div>
+      <textarea name="knowledge_content" id="knowledge_content" hidden></textarea>
+    </div>
+
+    <div class="release_wrap">
+      <button type="submit" class="release">发 布</button>
     </div>
   </form>
 </div>
