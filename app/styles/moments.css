@@ -1,0 +1,87 @@
+body {
+  background-color: #f2f2f2;
+}
+
+.moments_list {
+  padding-bottom: 0.24rem;
+}
+
+.moment_item {
+  background-color: #fff;
+  padding: 0.12rem 0.24rem;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #d8d8d8;
+  margin-top: 0.24rem;
+}
+
+.post_info {
+  font-size: 0;
+}
+
+.post_info > *{
+  display: inline-block;
+  font-size: 0.36rem;
+}
+
+.post_info .avatar {
+  width: 0.72rem;
+  height: 0.72rem;
+  margin-right: 0.12rem;
+}
+
+.post_info .post_time {
+  color: #999;
+  height: 0.36rem;
+  line-height: 0.36rem;
+  font-size: 0.24rem;
+}
+
+.post_content {
+  margin-top: 0.2rem;
+}
+
+.post_content .post_text {
+  font-size: 0.28rem;
+  line-height: 0.36rem;
+}
+
+.post_content .post_img {
+  margin-top: 0.12rem;
+}
+
+.post_img img {
+  max-width: 60%;
+}
+
+.social_toolbar{
+  font-size: 0;
+}
+
+.social_toolbar {
+  display: flex;
+  padding: 0.08rem 0;
+}
+
+.social_toolbar li {
+  position: relative;
+  display: inline-block;
+  font-size: 0.36rem;
+  color: #999;
+  width: 100%;
+  -webkit-box-flex: 1;
+  flex: 1;
+  text-align: center;
+}
+
+.social_toolbar li:after {
+  content: '';
+  position: absolute;
+  top: 0.06rem;
+  right: 0;
+  height: 0.28rem;
+  border-left: 1px solid #ccc;
+}
+
+.social_toolbar li:last-child:after {
+  border: none;
+}

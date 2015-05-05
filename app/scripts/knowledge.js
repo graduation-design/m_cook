@@ -28,8 +28,8 @@
   };
 
   var toolbarTap = function(){
-    $('.social_toolbar ul').on('click', 'li', function(ev){
-      $(ev.currentTarget).find('span').toggleClass('used');
+    $('.social_toolbar li').on('click', function(ev){
+      $(ev.target).find('span').toggleClass('used');
     })
   }
 })(jQuery);
