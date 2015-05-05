@@ -60,3 +60,27 @@ h1 {
 article p {
   text-indent: 0.72rem;
 }
+
+.social_toolbar {
+  height: 0.7rem;
+}
+
+.social_toolbar ul {
+  text-align: right;
+}
+
+.social_toolbar li{
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  text-align: center;
+  background-color: rgb(234, 231, 196);
+  border-radius: 100%;
+  color: #7B7B7F;
+  margin-right: 0.24rem;
+}
+
+.social_toolbar li .used {
+  color: rgb(71, 174, 115);
+}
