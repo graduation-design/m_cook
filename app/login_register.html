@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mCook</title>
+  <!-- build:css styles/common.css -->
+  <link rel="stylesheet" href="styles/common.css">
+  <!-- endbuild -->
+  <!-- build:css styles/login_register.css -->
+  <link rel="stylesheet" href="styles/login_register.css">
+  <!-- endbuild -->
+</head>
+<body>
+<div class="wrapper">
+  <section id="login" class="form_sec">
+    <div class="content">
+      <form action="#" method="post">
+        <h2>登陆</h2>
+
+        <p>
+          <label for="login_user_id">账号</label>
+          <input required type="text" id="login_user_id" name="user_id"/>
+        </p>
+
+        <p>
+          <label for="login_password">密码</label>
+          <input required type="password" id="login_password" name="password"/>
+        </p>
+
+        <p class="btn_wrapper">
+          <button type="submit" id="login_btn">登陆</button>
+        </p>
+      </form>
+      <div class="to_register switcher">我要注册</div>
+    </div>
+  </section>
+  <section class="form_sec" id="register">
+    <div class="content">
+      <form action="#" method="post">
+        <h2>注册</h2>
+
+        <p>
+          <label for="register_user_id">邮箱</label>
+          <input required type="email" id="register_user_id" name="user_id"/>
+        </p>
+
+        <p>
+          <label for="register_user_name">昵称</label>
+          <input required type="email" id="register_user_name" name="nic_name"/>
+        </p>
+
+        <p>
+          <label for="register_password">密码</label>
+          <input required type="password" id="register_password" name="password"/>
+        </p>
+
+        <p class="btn_wrapper">
+          <button type="submit" id="register_btn">注册</button>
+        </p>
+      </form>
+      <div class="to_login switcher">返回登陆</div>
+    </div>
+  </section>
+</div>
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/login_register.js -->
+<script src="scripts/login_register.js"></script>
+<!-- endbuild -->
+</body>
+</html>

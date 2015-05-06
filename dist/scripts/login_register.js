@@ -1,0 +1,1 @@
+!function(t){"use strict";t(function(){t(".switcher").on("click",function(r){var s=t(".wrapper");t(r.target).hasClass("to_register")?s.css("transform","translateY(-100%)"):s.css("transform","translateY(0)")})})}(jQuery);
