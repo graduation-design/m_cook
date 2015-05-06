@@ -25,8 +25,12 @@ h2 {
 }
 
 .form_sec .content form {
-  width: 92%;
+  width: 100%;
   overflow: hidden;
+}
+
+.form_detail {
+  width: 92%;
   margin: 0 auto;
 }
 

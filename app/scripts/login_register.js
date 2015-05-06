@@ -23,5 +23,9 @@
     $('.next_step').on('click', function(){
       $('.slider').addClass('show_second');
     });
+
+    $('.prev_step').on('click', function(){
+      $('.slider').removeClass('show_second');
+    });
   })
 })(jQuery);
