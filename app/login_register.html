@@ -50,7 +50,7 @@
 
             <p>
               <label for="register_user_name">昵称</label>
-              <input required type="email" id="register_user_name" name="user_name"/>
+              <input required type="text" id="register_user_name" name="user_name"/>
             </p>
 
             <p>
@@ -64,14 +64,40 @@
           </div>
 
           <div class="second_step">
+            <div class="note">以下信息可以以后再补充哦~</div>
             <p>
-            <div class="field">性别</div>
-            <label for="register_sex_woman">女</label>
-            <input type="radio" id="register_sex_woman" name="sex"/>
-            <label for="register_sex_man">男</label>
-            <input type="radio" id="register_sex_man" name="sex"/>
+              <span class="field">性别</span>
+              <label class="inline_label" for="register_sex_woman">女</label>
+              <input type="radio" id="register_sex_woman" name="sex" checked/>
+              <label class="inline_label" for="register_sex_man">男</label>
+              <input type="radio" id="register_sex_man" name="sex"/>
             </p>
+
+            <p data-toggle="distpicker">
+              <span class="field">地区</span>
+              <label class="inline_label" for="register_province">省：</label>
+              <select id="register_province" name="province" data-province="---- 选择省 ----"></select>
+              <label class="inline_label" for="register_city">市：</label>
+              <select id="register_city" name="city" data-city="---- 选择市 ----"></select>
+            </p>
+
+            <p>
+              <label for="register_avatar">头像</label>
+              <input required type="text" id="register_avatar" name="avatar"/>
+            </p>
+
+            <p>
+              <label for="register_sign">个性签名</label>
+              <input required type="text" id="register_sign" name="sign"/>
+            </p>
+
+            <p>
+              <label for="register_favor">爱好</label>
+              <input required type="text" id="register_favor" name="favor"/>
+            </p>
+
             <p class="btn_wrapper">
+              <button type="button" class="prev_step">上一步</button>
               <button type="submit" id="register_btn">注册</button>
             </p>
           </div>
@@ -85,6 +111,8 @@
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
 <script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/distpicker/dist/distpicker.data.min.js"></script>
+<script src="/bower_components/distpicker/dist/distpicker.min.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 

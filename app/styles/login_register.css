@@ -33,11 +33,26 @@ h2 {
 .slider {
   width: 200%;
   font-size: 0;
+  transform: translateX(0);
+  transition: transform 0.5s ease;
+}
+
+.slider.show_second {
   transform: translateX(-50%);
 }
 
-.slider > div{
+.slider .second_step {
+
+}
+
+.slider .second_step .note {
+  margin-top: 0.24rem;
+  font-size: 0.24rem;
+}
+
+.slider > div {
   display: inline-block;
+  vertical-align: top;
   width: 50%;
   font-size: 0.36rem;
 }
@@ -83,11 +98,26 @@ label {
   margin-bottom: 0.24rem;
 }
 
-input[type="text"] {
+.inline_label {
+  display: inline;
+}
+
+.field {
+  display: block;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
   display: block;
   width: 100%;
   height: 0.48rem;
   border: none;
+}
+
+input[type="radio"] {
+  border: none;
+  margin-right: 0.36rem;
 }
 
 #login {
@@ -102,12 +132,14 @@ input[type="text"] {
 button {
   background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
-  padding: 0.12rem 0.36rem;
+  padding: 0;
   margin: 0;
   box-shadow: none;
   border: none;
   font-weight: bold;
   font-size: 0.36rem;
+  width: 1.44rem;
+  height: 0.7rem;
   border-radius: 5px;
 }
 
@@ -115,6 +147,10 @@ button {
   position: absolute;
   bottom: 0.24rem;
   right: 0.24rem;
+}
+
+.prev_step {
+  float: left;
 }
 
 #register {

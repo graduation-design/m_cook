@@ -19,5 +19,9 @@
         registerSection.find('p').removeClass('show');
       }
     });
+
+    $('.next_step').on('click', function(){
+      $('.slider').addClass('show_second');
+    });
   })
 })(jQuery);
