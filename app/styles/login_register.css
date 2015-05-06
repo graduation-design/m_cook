@@ -26,7 +26,20 @@ h2 {
 
 .form_sec .content form {
   width: 92%;
+  overflow: hidden;
   margin: 0 auto;
+}
+
+.slider {
+  width: 200%;
+  font-size: 0;
+  transform: translateX(-50%);
+}
+
+.slider > div{
+  display: inline-block;
+  width: 50%;
+  font-size: 0.36rem;
 }
 
 .form_sec .content p {

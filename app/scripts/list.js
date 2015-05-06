@@ -5,7 +5,7 @@
     $('.list_section').on('click', 'li', function(ev){
       var $tgtItem = $(ev.currentTarget);
 
-      window.Android.callDetailPage($tgtItem.attr('data-id', 'data-type'));
+      $('body').append(window.Android.callDetailPage($tgtItem.attr('data-id'), $tgtItem.attr('data-type')));
     });
   })
 })(jQuery);

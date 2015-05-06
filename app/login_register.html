@@ -41,24 +41,41 @@
       <form action="#" method="post">
         <h2>注册</h2>
 
-        <p>
-          <label for="register_user_id">邮箱</label>
-          <input required type="email" id="register_user_id" name="user_id"/>
-        </p>
+        <div class="slider">
+          <div class="first_step">
+            <p>
+              <label for="register_user_id">邮箱</label>
+              <input required type="email" id="register_user_id" name="user_id"/>
+            </p>
 
-        <p>
-          <label for="register_user_name">昵称</label>
-          <input required type="email" id="register_user_name" name="nic_name"/>
-        </p>
+            <p>
+              <label for="register_user_name">昵称</label>
+              <input required type="email" id="register_user_name" name="user_name"/>
+            </p>
 
-        <p>
-          <label for="register_password">密码</label>
-          <input required type="password" id="register_password" name="password"/>
-        </p>
+            <p>
+              <label for="register_password">密码</label>
+              <input required type="password" id="register_password" name="password"/>
+            </p>
 
-        <p class="btn_wrapper">
-          <button type="submit" id="register_btn">注册</button>
-        </p>
+            <p class="btn_wrapper">
+              <button type="button" class="next_step">下一步</button>
+            </p>
+          </div>
+
+          <div class="second_step">
+            <p>
+            <div class="field">性别</div>
+            <label for="register_sex_woman">女</label>
+            <input type="radio" id="register_sex_woman" name="sex"/>
+            <label for="register_sex_man">男</label>
+            <input type="radio" id="register_sex_man" name="sex"/>
+            </p>
+            <p class="btn_wrapper">
+              <button type="submit" id="register_btn">注册</button>
+            </p>
+          </div>
+        </div>
       </form>
       <div class="to_login switcher">返回登陆</div>
     </div>
