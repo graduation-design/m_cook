@@ -1,0 +1,1 @@
+!function(){"use strict";$(function(){$(".list_section").on("click","li",function(t){var n=$(t.currentTarget);console.log(n),$("#test").html(Android.callDetailPage(n.attr("data-id"),n.attr("data-type"))+"010"+Android.testfunc("t"))})})}(jQuery);
