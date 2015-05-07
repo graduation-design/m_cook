@@ -116,6 +116,13 @@ label {
 
 .field {
   display: block;
+  font-size: 0.28rem;
+  margin-bottom: 0.24rem;
+}
+
+.second_step label,
+.second_step .field {
+  margin-bottom: 0.12rem;
 }
 
 input[type="email"],
@@ -131,7 +138,8 @@ input[type="radio"] {
   visibility: hidden;
   margin-right: 0.6rem;
 }
-input[type="radio"]:after{
+
+input[type="radio"]:after {
   content: '';
   visibility: visible;
   display: inline-block;
@@ -141,7 +149,7 @@ input[type="radio"]:after{
   border-radius: 100%;
 }
 
-input[type="radio"]:checked:after{
+input[type="radio"]:checked:after {
   background-color: #7B7B7F;
 }
 
