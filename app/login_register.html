@@ -17,16 +17,15 @@
   <section id="login" class="form_sec">
     <div class="content">
       <form action="#" method="post">
-        <h2>登陆</h2>
         <div class="form_detail">
-          <p>
+          <p class="dash_side">
             <label for="login_user_id">账号</label>
-            <input required type="text" id="login_user_id" name="user_id"/>
+            <input placeholder="账号" required type="text" id="login_user_id" name="user_id"/>
           </p>
 
-          <p>
+          <p class="dash_side">
             <label for="login_password">密码</label>
-            <input required type="password" id="login_password" name="password"/>
+            <input placeholder="密码" required type="password" id="login_password" name="password"/>
           </p>
 
           <p class="btn_wrapper">
@@ -40,24 +39,24 @@
   <section class="form_sec" id="register">
     <div class="content">
       <form action="#" method="post">
-        <h2>注册</h2>
-
         <div class="slider">
           <div class="first_step">
+            <h2>注册</h2>
+
             <div class="form_detail">
-              <p>
+              <p class="dash_side">
                 <label for="register_user_id">邮箱</label>
-                <input required type="email" id="register_user_id" name="user_id"/>
+                <input placeholder="邮箱" required type="email" id="register_user_id" name="user_id"/>
               </p>
 
-              <p>
+              <p class="dash_side">
                 <label for="register_user_name">昵称</label>
-                <input required type="text" id="register_user_name" name="user_name"/>
+                <input placeholder="昵称" required type="text" id="register_user_name" name="user_name"/>
               </p>
 
-              <p>
+              <p class="dash_side">
                 <label for="register_password">密码</label>
-                <input required type="password" id="register_password" name="password"/>
+                <input placeholder="密码" required type="password" id="register_password" name="password"/>
               </p>
 
               <p class="btn_wrapper">
@@ -69,8 +68,13 @@
           <div class="second_step">
             <div class="form_detail">
               <div class="note">以下信息可以以后再补充哦~</div>
+
+              <!--<p>-->
+                <!--<label for="register_avatar">头像</label>-->
+                <!--<input type="file" id="register_avatar" accept="image/*" name="avatar"/>-->
+              <!--</p>-->
+
               <p>
-                <span class="field">性别</span>
                 <label class="inline_label" for="register_sex_woman">女</label>
                 <input type="radio" id="register_sex_woman" name="sex" checked/>
                 <label class="inline_label" for="register_sex_man">男</label>
@@ -78,36 +82,30 @@
               </p>
 
               <p data-toggle="distpicker">
-                <span class="field">地区</span>
-                <label class="inline_label" for="register_province">省：</label>
+                <label for="register_province">省：</label>
                 <select id="register_province" name="province" data-province="---- 选择省 ----"></select>
-                <label class="inline_label" for="register_city">市：</label>
+                <label for="register_city">市：</label>
                 <select id="register_city" name="city" data-city="---- 选择市 ----"></select>
               </p>
 
-              <p>
-                <label for="register_avatar">头像</label>
-                <input required type="file" id="register_avatar" accept="image/*" name="avatar"/>
-              </p>
-
-              <p>
+              <p class="dash_side">
                 <label for="register_sign">个性签名</label>
-                <input required type="text" id="register_sign" name="sign"/>
+                <input placeholder="个性签名" type="text" id="register_sign" name="sign"/>
               </p>
 
-              <p>
+              <p class="dash_side">
                 <label for="register_favor">爱好</label>
-                <input required type="text" id="register_favor" name="favor"/>
+                <input placeholder="爱好" type="text" id="register_favor" name="favor"/>
               </p>
 
               <p class="btn_wrapper">
-                <button type="button" class="prev_step">上一步</button>
                 <button type="submit" id="register_btn">注册</button>
               </p>
             </div>
           </div>
         </div>
       </form>
+      <div class="prev_step switcher">上一步</div>
       <div class="to_login switcher">返回登陆</div>
     </div>
   </section>
