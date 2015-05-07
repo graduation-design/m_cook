@@ -62,9 +62,17 @@ h2 {
 }
 
 .form_sec .content p {
-  transition: opacity 0.2s ease, transform 0.3s ease;
+  transition: opacity 0.2s ease, transform 0.4s ease;
   transform: translateY(0.6rem);
   opacity: 0;
+}
+
+#login p {
+  transform: translateY(-0.6rem);
+}
+
+#login p.show {
+  transform: translateY(0);
 }
 
 .form_sec .content p.show {
@@ -120,8 +128,26 @@ input[type="password"] {
 }
 
 input[type="radio"] {
+  visibility: hidden;
+  margin-right: 0.6rem;
+}
+input[type="radio"]:after{
+  content: '';
+  visibility: visible;
+  display: inline-block;
+  width: 0.28rem;
+  height: 0.28rem;
+  border: 2px solid #7B7B7F;
+  border-radius: 100%;
+}
+
+input[type="radio"]:checked:after{
+  background-color: #7B7B7F;
+}
+
+select {
   border: none;
-  margin-right: 0.36rem;
+  background-color: #fff;
 }
 
 #login {

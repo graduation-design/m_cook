@@ -37,9 +37,8 @@ body {
   width: 35%;
   max-width: 100px;
   height: 80px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: auto 80px;
+  background: 50% 50% no-repeat;
+  background-size: cover;
 }
 
 .list_section li .info {
