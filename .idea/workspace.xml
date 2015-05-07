@@ -2,42 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23e9668d-21da-4272-bf8a-747af1e0a80c" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\school\m_cook\.idea\.name" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\cookbook.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\knowledge.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\list.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\login_register.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\moments.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\personal.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\scripts\cookbook.js" afterPath="" />
       <change type="DELETED" beforePath="E:\school\m_cook\dist\scripts\distpicker.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\scripts\jssor.slider.min.js.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\scripts\knowledge.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\scripts\list.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\scripts\login_register.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\scripts\main.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\scripts\step_detail.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\scripts\upload_cookbook.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\scripts\vendor.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\scripts\vendor.js0" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\step_detail.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\styles\comments.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\styles\common.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\styles\cookbook.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\styles\knowledge.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\styles\list.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\styles\login_register.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\styles\main.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\styles\moments.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\styles\step_detail.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\styles\upload_cookbook.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\styles\upload_knowledge.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\test.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\upload_cookbook.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\school\m_cook\dist\upload_knowledge.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/login_register.css" afterPath="$PROJECT_DIR$/app/styles/login_register.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/login_register.html" afterPath="$PROJECT_DIR$/app/login_register.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="m_cook.iws" />
@@ -62,8 +29,8 @@
       <file leaf-file-name="login_register.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/login_register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21853147">
-              <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+            <state vertical-scroll-proportion="0.30594406">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -83,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/app/styles/login_register.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="201" column="22" selection-start-line="201" selection-start-column="22" selection-end-line="201" selection-end-column="22" />
+              <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -136,8 +103,8 @@
         <option value="$PROJECT_DIR$/app/styles/list.css" />
         <option value="$PROJECT_DIR$/app/scripts/upload_knowledge.js" />
         <option value="$PROJECT_DIR$/app/scripts/login_register.js" />
-        <option value="$PROJECT_DIR$/app/styles/login_register.css" />
         <option value="$PROJECT_DIR$/app/login_register.html" />
+        <option value="$PROJECT_DIR$/app/styles/login_register.css" />
       </list>
     </option>
   </component>
@@ -182,7 +149,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -232,6 +198,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -241,6 +208,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -283,6 +251,9 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="23e9668d-21da-4272-bf8a-747af1e0a80c" name="Default" comment="" />
@@ -319,6 +290,14 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.gitignore" />
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -327,6 +306,22 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/styles/login_register.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="201" column="22" selection-start-line="201" selection-start-column="22" selection-end-line="201" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/upload_knowledge.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="48" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/upload_knowledge.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -632,10 +627,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08250825">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/upload_knowledge.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="48" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/login_register.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -648,34 +665,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitattributes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08250825">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/login_register.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="201" column="22" selection-start-line="201" selection-start-column="22" selection-end-line="201" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/login_register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21853147">
-          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.30594406">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
