@@ -4,7 +4,7 @@
     <list default="true" id="23e9668d-21da-4272-bf8a-747af1e0a80c" name="Default" comment="">
       <change type="DELETED" beforePath="E:\school\m_cook\dist\scripts\distpicker.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/login_register.css" afterPath="$PROJECT_DIR$/app/styles/login_register.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/login_register.js" afterPath="$PROJECT_DIR$/app/scripts/login_register.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/login_register.html" afterPath="$PROJECT_DIR$/app/login_register.html" />
     </list>
     <ignored path="m_cook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,28 +28,28 @@
       <file leaf-file-name="login_register.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/login_register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.147059">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state vertical-scroll-proportion="-15.3529415">
+              <caret line="118" column="8" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login_register.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login_register.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/login_register.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53630364">
+            <state vertical-scroll-proportion="0.0">
               <caret line="55" column="48" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login_register.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login_register.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/styles/login_register.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.12376238">
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -101,9 +101,9 @@
         <option value="$PROJECT_DIR$/app/scripts/list.js" />
         <option value="$PROJECT_DIR$/app/styles/list.css" />
         <option value="$PROJECT_DIR$/app/scripts/upload_knowledge.js" />
+        <option value="$PROJECT_DIR$/app/scripts/login_register.js" />
         <option value="$PROJECT_DIR$/app/login_register.html" />
         <option value="$PROJECT_DIR$/app/styles/login_register.css" />
-        <option value="$PROJECT_DIR$/app/scripts/login_register.js" />
       </list>
     </option>
   </component>
@@ -648,26 +648,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/login_register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="48" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/login_register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.147059">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state vertical-scroll-proportion="-15.3529415">
+          <caret line="118" column="8" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/login_register.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/login_register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53630364">
-          <caret line="55" column="48" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.12376238">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
           <folding />
         </state>
       </provider>
