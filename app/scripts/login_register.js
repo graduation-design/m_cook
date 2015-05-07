@@ -53,7 +53,7 @@
     $('.switcher').on('click', function(ev){
       var $wrapper = $('.wrapper');
       if($(ev.target).hasClass('to_register')){
-        $wrapper.css('transform', 'translateY(-100%)');
+        $wrapper.css('transform', 'translateY(-50%)');
         registerSection.find('p').addClass('show');
         loginSection.find('p').removeClass('show');
       }
