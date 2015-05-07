@@ -41,6 +41,10 @@ h2 {
   overflow: hidden;
 }
 
+#register_form {
+  margin-top: -20%;
+}
+
 .form_detail {
   width: 80%;
   margin: 0 auto;
@@ -58,7 +62,6 @@ h2 {
 }
 
 .slider .second_step .note {
-  margin-top: 0.24rem;
   font-size: 0.24rem;
 }
 
@@ -186,13 +189,17 @@ select {
   background-color: #fff;
 }
 
+select:focus {
+  outline: none;
+}
+
 #login {
   background-color: #f2f2f2;
   color: #7B7B7F;
 }
 
 .btn_wrapper {
-  text-align: right;
+  padding-top: 0.6rem;
 }
 
 button {
@@ -265,5 +272,12 @@ button {
 
 .dist_picker select {
   display: inline-block;
-  width: 50%;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #999;
+  width: 46%;
+  margin-right: 8%;
+}
+
+.dist_picker select:last-child {
+  margin-right: 0;
 }
