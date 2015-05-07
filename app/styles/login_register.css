@@ -116,6 +116,10 @@ h2 {
   transition-delay: 0.45s;
 }
 
+.form_sec .content p:nth-child(7) {
+  transition-delay: 0.5s;
+}
+
 .form_sec .content p.dash_side {
   border: 1px #999;
   border-style: none solid solid;
