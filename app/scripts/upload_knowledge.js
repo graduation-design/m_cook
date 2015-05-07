@@ -35,7 +35,7 @@ function imgUpload(fileInput, uuid) {
   });
 }
 
-function readURL(input, $tgtImg) {
+var readURL = function (input, $tgtImg) {
   if (input.files && input.files[0]) {
     var reader = new FileReader();
 
@@ -46,4 +46,4 @@ function readURL(input, $tgtImg) {
 
     reader.readAsDataURL(input.files[0]);
   }
-}
+};
