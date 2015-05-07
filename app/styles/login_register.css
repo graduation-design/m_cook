@@ -1,5 +1,6 @@
 .viewport {
   height: 100%;
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -28,9 +29,7 @@ h2 {
 
 .wrapper .form_sec {
   height: 50%;
-  width: 100%;
   display: table;
-  position: relative;
 }
 
 .wrapper .form_sec .content {
@@ -39,13 +38,7 @@ h2 {
 }
 
 .form_sec .content form {
-  position: relative;
   width: 100%;
-  overflow: hidden;
-}
-
-#register_form {
-  /*margin-top: -20%;*/
 }
 
 .form_detail {
@@ -53,22 +46,20 @@ h2 {
   margin: 0 auto;
 }
 
-.slider {
-  width: 200%;
+#register_form {
+  transition: transform 0.3s ease;
   font-size: 0;
-  transform: translateX(0);
-  transition: transform 0.5s ease;
 }
 
-.slider.show_second {
+#register_form.show_second {
   transform: translateX(-50%);
 }
 
-.slider .second_step .note {
+#register_form .second_step .note {
   font-size: 0.24rem;
 }
 
-.slider > div {
+#register_form > div {
   display: inline-block;
   vertical-align: top;
   width: 50%;
@@ -197,6 +188,7 @@ select:focus {
 }
 
 #login {
+  width: 100%;
   background-color: #f2f2f2;
   color: #7B7B7F;
 }
@@ -226,6 +218,10 @@ button {
   color: #2ecc71;
 }
 
+.switcher.to_login {
+  display: none;
+}
+
 .prev_step {
   position: absolute;
   bottom: 0.24rem;
@@ -235,6 +231,7 @@ button {
 }
 
 #register {
+  width: 200%;
   background-color: #f2f2f2;
   color: #7B7B7F;
 }

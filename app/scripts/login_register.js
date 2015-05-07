@@ -35,12 +35,12 @@
       //}
 
       //show next step
-      $('.slider').addClass('show_second');
+      $('#register_form').addClass('show_second');
       $('.prev_step').css('display', 'block');
     });
 
     $('.prev_step').on('click', function(){
-      $('.slider').removeClass('show_second');
+      $('#register_form').removeClass('show_second');
       $('.prev_step').css('display', 'none');
     });
   };
@@ -52,7 +52,8 @@
 
     $('.switcher').on('click', function(ev){
       var $wrapper = $('.wrapper');
-      if($(ev.target).hasClass('to_register')){
+      var $tgt = $(ev.target);
+      if($tgt.hasClass('to_register')){
         $wrapper.css('transform', 'translateY(-50%)');
         registerSection.find('p').addClass('show');
         loginSection.find('p').removeClass('show');
