@@ -31,7 +31,7 @@ h2 {
   height: 50%;
 }
 
-.form_sec .content form {
+.form_sec  form {
   width: 100%;
 }
 
@@ -40,13 +40,13 @@ h2 {
   margin: 0 auto;
 }
 
-.form_sec .content p {
-  transition: opacity 0.2s ease, transform 0.4s ease;
+.form_sec  p {
+  transition: all 0.3s ease;
   transform: translateY(0.6rem);
   opacity: 0;
 }
 
-.form_sec .content p.sex_select {
+.form_sec  p.sex_select {
   text-align: center;
 }
 
@@ -58,36 +58,36 @@ h2 {
   transform: translateY(0);
 }
 
-.form_sec .content p.show {
+.form_sec  p.show {
   transform: translateY(0);
   opacity: 1;
 }
 
-.form_sec .content p:first-child {
+.form_sec  p:first-child {
   transition-delay: 0.2s;
 }
 
-.form_sec .content p:nth-child(2) {
+.form_sec  p:nth-child(2) {
   transition-delay: 0.25s;
 }
 
-.form_sec .content p:nth-child(3) {
+.form_sec  p:nth-child(3) {
   transition-delay: 0.3s;
 }
 
-.form_sec .content p:nth-child(4) {
+.form_sec  p:nth-child(4) {
   transition-delay: 0.35s;
 }
 
-.form_sec .content p:nth-child(5) {
+.form_sec  p:nth-child(5) {
   transition-delay: 0.4s;
 }
 
-.form_sec .content p:nth-child(6) {
+.form_sec  p:nth-child(6) {
   transition-delay: 0.45s;
 }
 
-.form_sec .content p:nth-child(7) {
+.form_sec  p:nth-child(7) {
   transition-delay: 0.5s;
 }
 

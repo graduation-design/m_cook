@@ -34,8 +34,8 @@
       $DragOrientations: 1,
       $StartIndex: location.hash.slice(1) || 0,
       $SlideWidth: $viewport.width(),
-      $SlideHeight: height,
-      $HWA: false
+      $SlideHeight: height
+      //$HWA: false
     });
 
     $('.next_step').on('click', function(){
