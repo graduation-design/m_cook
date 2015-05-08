@@ -212,9 +212,7 @@ button {
 }
 
 .switcher {
-  position: absolute;
-  bottom: 0.24rem;
-  right: 10%;
+  float: right;
   color: #2ecc71;
 }
 
@@ -223,9 +221,7 @@ button {
 }
 
 .prev_step {
-  position: absolute;
-  bottom: 0.24rem;
-  left: 10%;
+  float: left;
   display: none;
   color: #2ecc71;
 }

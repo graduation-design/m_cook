@@ -54,11 +54,15 @@
       var $wrapper = $('.wrapper');
       var $tgt = $(ev.target);
       if($tgt.hasClass('to_register')){
+        $tgt.hide();
+        $('.to_login').show();
         $wrapper.css('transform', 'translateY(-50%)');
         registerSection.find('p').addClass('show');
         loginSection.find('p').removeClass('show');
       }
       else{
+        $tgt.hide();
+        $('.to_register').show();
         $wrapper.css('transform', 'translateY(0)');
         loginSection.find('p').addClass('show');
         registerSection.find('p').removeClass('show');
