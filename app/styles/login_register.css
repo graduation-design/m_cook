@@ -11,8 +11,10 @@ h2 {
 }
 
 .wrapper {
+  position: relative;
+  top: 0;
   height: 200%;
-  transition: transform 0.5s ease;
+  transition: top 0.5s ease;
 }
 
 #logo {
