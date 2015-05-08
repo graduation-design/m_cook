@@ -53,8 +53,11 @@ h2 {
 
 .form_sec  p {
   transition: all 0.3s ease;
-  transform: translateY(0.6rem);
+  position: relative;
+  top: 0.6rem;
+  /*transform: translateY(0.6rem);*/
   opacity: 0;
+
 }
 
 .form_sec  p.sex_select {
@@ -62,15 +65,17 @@ h2 {
 }
 
 #login p {
-  transform: translateY(-0.6rem);
+  position: relative;
+  top: -0.6rem;
+  /*transform: translateY(-0.6rem);*/
 }
 
 #login p.show {
-  transform: translateY(0);
+  top: 0;
 }
 
 .form_sec  p.show {
-  transform: translateY(0);
+  top: 0;
   opacity: 1;
 }
 
@@ -161,6 +166,7 @@ input[type="radio"]:after {
   height: 0.28rem;
   border: 2px solid #9acccd;
   border-radius: 100%;
+  overflow: hidden;
 }
 
 input[type="radio"]:checked:after {
