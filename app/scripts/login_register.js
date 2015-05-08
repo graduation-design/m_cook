@@ -24,6 +24,20 @@
   };
 
   var registerSteps = function(){
+    var $viewport = $('.viewport');
+    var height =$viewport.height();
+    $('.slides').css('height', height);
+    var slides = new $JssorSlider$('register_slider', {
+      $DragOrientation:0,
+      $AutoPlay: false,
+      $Loop: 0,
+      $DragOrientations: 1,
+      $StartIndex: location.hash.slice(1) || 0,
+      $SlideWidth: $viewport.width(),
+      $SlideHeight: height,
+      $HWA: false
+    });
+
     $('.next_step').on('click', function(){
       //validate form
       //var $requiredInput = $('.required_input');
@@ -34,14 +48,11 @@
       //  }
       //}
 
-      //show next step
-      $('#register_form').addClass('show_second');
-      $('.prev_step').css('display', 'block');
+      slides.$Next();
     });
 
     $('.prev_step').on('click', function(){
-      $('#register_form').removeClass('show_second');
-      $('.prev_step').css('display', 'none');
+      slides.$Prev();
     });
   };
 

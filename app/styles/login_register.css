@@ -29,12 +29,6 @@ h2 {
 
 .wrapper .form_sec {
   height: 50%;
-  display: table;
-}
-
-.wrapper .form_sec .content {
-  display: table-cell;
-  vertical-align: middle;
 }
 
 .form_sec .content form {
@@ -44,26 +38,6 @@ h2 {
 .form_detail {
   width: 80%;
   margin: 0 auto;
-}
-
-#register_form {
-  transition: transform 0.3s ease;
-  font-size: 0;
-}
-
-#register_form.show_second {
-  transform: translateX(-50%);
-}
-
-#register_form .second_step .note {
-  font-size: 0.24rem;
-}
-
-#register_form > div {
-  display: inline-block;
-  vertical-align: top;
-  width: 50%;
-  font-size: 0.36rem;
 }
 
 .form_sec .content p {
@@ -117,7 +91,7 @@ h2 {
   transition-delay: 0.5s;
 }
 
-.form_sec .content p.dash_side {
+.form_sec p.dash_side {
   border: 1px #999;
   border-style: none solid solid;
   padding-bottom: 0.06rem;
@@ -222,12 +196,10 @@ button {
 
 .prev_step {
   float: left;
-  display: none;
   color: #2ecc71;
 }
 
 #register {
-  width: 200%;
   background-color: #f2f2f2;
   color: #7B7B7F;
 }
@@ -276,4 +248,21 @@ button {
 
 .dist_picker select:last-child {
   margin-right: 0;
+}
+
+#register_slider {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#register_slider .slides {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
 }

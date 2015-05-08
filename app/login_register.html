@@ -39,84 +39,88 @@
         </form>
       </div>
     </section>
-    <section class="form_sec" id="register">
-      <div class="content">
-        <form id="register_form" action="#" method="post">
-          <div class="first_step">
-            <h2>注册</h2>
+    <section id="register" class="form_sec">
+      <form id="register_form" action="#" method="post">
+        <div id="register_slider">
+          <div u="slides" class="slides">
+            <div>
+              <div class="first_step" u="image">
+                <h2>注册</h2>
 
-            <div class="form_detail">
-              <p class="dash_side">
-                <label for="register_user_id">邮箱</label>
-                <input class="required_input" placeholder="邮箱" required type="email" id="register_user_id"
-                       name="user_id"/>
-              </p>
+                <div class="form_detail">
+                  <p class="dash_side">
+                    <label for="register_user_id">邮箱</label>
+                    <input class="required_input" placeholder="邮箱" required type="email" id="register_user_id"
+                           name="user_id"/>
+                  </p>
 
-              <p class="dash_side">
-                <label for="register_password">密码</label>
-                <input class="required_input" placeholder="密码" required type="password" id="register_password"
-                       name="password"/>
-              </p>
+                  <p class="dash_side">
+                    <label for="register_password">密码</label>
+                    <input class="required_input" placeholder="密码" required type="password" id="register_password"
+                           name="password"/>
+                  </p>
 
-              <p class="dash_side">
-                <label for="register_user_name">昵称</label>
-                <input class="required_input" placeholder="昵称" required type="text" id="register_user_name"
-                       name="user_name"/>
-              </p>
+                  <p class="dash_side">
+                    <label for="register_user_name">昵称</label>
+                    <input class="required_input" placeholder="昵称" required type="text" id="register_user_name"
+                           name="user_name"/>
+                  </p>
 
-              <p class="btn_wrapper">
-                <button type="button" class="next_step">下一步</button>
-              </p>
-              <div class="to_login switcher">返回登陆</div>
+                  <p class="btn_wrapper">
+                    <button type="button" class="next_step">下一步</button>
+                  </p>
+                  <div class="to_login switcher">返回登陆</div>
+                </div>
+              </div>
             </div>
+            <div>
+              <div class="second_step" u="image">
+                <div class="form_detail">
+                  <div class="note">以下信息可以以后再补充哦~</div>
 
+                  <p class="avatar_upload">
+                    <span class="fontawesome-camera"></span>
+                    <label for="register_avatar">头像</label>
+                    <img src="#" class="placeholder_img"/>
+                    <input type="file" id="register_avatar" accept="image/*" name="avatar"/>
+                  </p>
 
-          </div>
-          <div class="second_step">
-            <div class="form_detail">
-              <div class="note">以下信息可以以后再补充哦~</div>
+                  <p class="sex_select">
+                    <label class="inline_label" for="register_sex_woman">女</label>
+                    <input type="radio" id="register_sex_woman" name="sex" checked/>
+                    <label class="inline_label" for="register_sex_man">男</label>
+                    <input type="radio" id="register_sex_man" name="sex"/>
+                  </p>
 
-              <p class="avatar_upload">
-                <span class="fontawesome-camera"></span>
-                <label for="register_avatar">头像</label>
-                <img src="#" class="placeholder_img"/>
-                <input type="file" id="register_avatar" accept="image/*" name="avatar"/>
-              </p>
+                  <p class="dist_picker" data-toggle="distpicker">
+                    <label for="register_province">省：</label>
+                    <select id="register_province" name="province" data-province="---- 选择省 ----"></select>
+                    <label for="register_city">市：</label>
+                    <select id="register_city" name="city" data-city="---- 选择市 ----"></select>
+                  </p>
 
-              <p class="sex_select">
-                <label class="inline_label" for="register_sex_woman">女</label>
-                <input type="radio" id="register_sex_woman" name="sex" checked/>
-                <label class="inline_label" for="register_sex_man">男</label>
-                <input type="radio" id="register_sex_man" name="sex"/>
-              </p>
+                  <p class="dash_side">
+                    <label for="register_sign">个性签名</label>
+                    <input placeholder="个性签名" type="text" id="register_sign" name="sign"/>
+                  </p>
 
-              <p class="dist_picker" data-toggle="distpicker">
-                <label for="register_province">省：</label>
-                <select id="register_province" name="province" data-province="---- 选择省 ----"></select>
-                <label for="register_city">市：</label>
-                <select id="register_city" name="city" data-city="---- 选择市 ----"></select>
-              </p>
+                  <p class="dash_side">
+                    <label for="register_favor">爱好</label>
+                    <input placeholder="爱好" type="text" id="register_favor" name="favor"/>
+                  </p>
 
-              <p class="dash_side">
-                <label for="register_sign">个性签名</label>
-                <input placeholder="个性签名" type="text" id="register_sign" name="sign"/>
-              </p>
+                  <p class="btn_wrapper">
+                    <button type="submit" id="register_btn">注册</button>
+                  </p>
 
-              <p class="dash_side">
-                <label for="register_favor">爱好</label>
-                <input placeholder="爱好" type="text" id="register_favor" name="favor"/>
-              </p>
-
-              <p class="btn_wrapper">
-                <button type="submit" id="register_btn">注册</button>
-              </p>
-
-              <div class="prev_step"><span class="fontawesome-arrow-left"></span>上一步</div>
-              <div class="to_login switcher">返回登陆</div>
+                  <div class="prev_step"><span class="fontawesome-arrow-left"></span>上一步</div>
+                  <div class="to_login switcher">返回登陆</div>
+                </div>
+              </div>
             </div>
           </div>
-        </form>
-      </div>
+        </div>
+      </form>
     </section>
   </div>
 </div>
@@ -127,6 +131,9 @@
 <!-- endbower -->
 <!-- endbuild -->
 
+<!-- build:js scripts/jssor.slider.min.js.js -->
+<script type="text/javascript" src="scripts/jssor.slider.min.js"></script>
+<!-- endbuild -->
 <!-- build:js scripts/login_register.js -->
 <script src="scripts/login_register.js"></script>
 <!-- endbuild -->
