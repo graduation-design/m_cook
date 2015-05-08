@@ -293,6 +293,6 @@ button {
 
 #register_slider .note{
   position: relative;
-  top: -0.5rem;
+  top: 0;
   font-size: 0.24rem;
 }
