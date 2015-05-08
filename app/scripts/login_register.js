@@ -38,6 +38,26 @@
       //$HWA: false
     });
 
+    //responsive code begin
+    //you can remove responsive code if you don't want the slider scales
+    //while window resizes
+    function ScaleSlider() {
+      var parentWidth = $('#register_slider').parent().width();
+      if (parentWidth) {
+        slides.$ScaleWidth(parentWidth);
+      }
+      else
+        window.setTimeout(ScaleSlider, 30);
+    }
+    //Scale slider after document ready
+    ScaleSlider();
+
+    //Scale slider while window load/resize/orientationchange.
+    $(window).bind("load", ScaleSlider);
+    $(window).bind("resize", ScaleSlider);
+    $(window).bind("orientationchange", ScaleSlider);
+    //responsive code end
+
     $('.next_step').on('click', function(){
       //validate form
       //var $requiredInput = $('.required_input');
@@ -47,7 +67,6 @@
       //    return;
       //  }
       //}
-
       slides.$Next();
     });
 
