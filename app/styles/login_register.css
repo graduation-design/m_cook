@@ -53,10 +53,12 @@ h2 {
 }
 
 .form_sec p {
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   position: relative;
-  top: 0.6rem;
-  /*transform: translateY(0.6rem);*/
+  /*top: 0.6rem;*/
+  -webkit-transform: translate3D(0, 0.6rem, 0);
+  transform: translate3D(0, 0.6rem, 0);
   opacity: 0;
 
 }
@@ -67,17 +69,22 @@ h2 {
 
 #login p {
   position: relative;
-  top: -0.6rem;
-  /*transform: translateY(-0.6rem);*/
+  /*top: -0.6rem;*/
+  -webkit-transform: translate3D(0, -0.6rem, 0);
+  transform: translate3D(0, -0.6rem, 0);
 }
 
 #login p.show {
-  top: 0;
+  /*top: 0;*/
+  -webkit-transform: translate3D(0, 0, 0);
+  transform: translate3D(0, 0, 0);
 }
 
 .form_sec p.show {
-  top: 0;
+  /*top: 0;*/
   opacity: 1;
+  -webkit-transform: translate3D(0, 0, 0);
+  transform: translate3D(0, 0, 0);
 }
 
 .form_sec p:first-child {

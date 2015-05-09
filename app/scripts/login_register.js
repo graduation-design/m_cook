@@ -39,8 +39,8 @@
       $DragOrientations: 1,
       $StartIndex: location.hash.slice(1) || 0,
       $SlideWidth: viewportRect.width,
-      $SlideHeight: viewportRect.height
-      //$HWA: false
+      $SlideHeight: viewportRect.height,
+      $HWA: false
     });
 
     //responsive code begin
