@@ -89,12 +89,12 @@
         registerSection.css({
           '-webkit-transform': 'translate3D(0,0,0)',
           'transform': 'translate3D(0,0,0)',
-          'transition': 'transform 0.5s ease'
+          'transition': 'transform 0.5s ease,-webkit-transform 0.5s ease'
         }).find('p').addClass('show');
         loginSection.css({
           '-webkit-transform': 'translate3D(0,-100%,0)',
           'transform': 'translate3D(0,-100%,0)',
-          'transition': 'transform 0.5s ease'
+          'transition': 'transform 0.5s ease,-webkit-transform 0.5s ease'
         }).find('p').removeClass('show');
       }
       else {
@@ -103,12 +103,12 @@
         loginSection.css({
           '-webkit-transform': 'translate3D(0,0,0)',
           'transform': 'translate3D(0,0,0)',
-          'transition': 'transform 0.5s ease'
+          'transition': 'transform 0.5s ease,-webkit-transform 0.5s ease'
         }).find('p').addClass('show');
         registerSection.css({
           '-webkit-transform': 'translate3D(0,100%,0)',
           'transform': 'translate3D(0,100%,0)',
-          'transition': 'transform 0.5s ease'
+          'transition': 'transform 0.5s ease,-webkit-transform 0.5s ease'
         }).find('p').removeClass('show');
       }
     });
