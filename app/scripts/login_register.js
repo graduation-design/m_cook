@@ -1,11 +1,11 @@
-(function($){
+(function ($) {
   'use strict';
 
-  $(function(){
+  $(function () {
     switchLoginRegister();
     registerSteps();
 
-    $('#register_avatar').on('change', function(){
+    $('#register_avatar').on('change', function () {
       readURL(this, $('.placeholder_img'));
     })
   });
@@ -23,12 +23,12 @@
     }
   };
 
-  var registerSteps = function(){
+  var registerSteps = function () {
     var $viewport = $('.viewport');
-    var height =$viewport.height();
+    var height = $viewport.height();
     $('.slides').css('height', height);
     var slides = new $JssorSlider$('register_slider', {
-      $DragOrientation:0,
+      $DragOrientation: 0,
       $AutoPlay: false,
       $Loop: 0,
       $DragOrientations: 1,
@@ -49,6 +49,7 @@
       else
         window.setTimeout(ScaleSlider, 30);
     }
+
     //Scale slider after document ready
     ScaleSlider();
 
@@ -58,7 +59,7 @@
     $(window).bind("orientationchange", ScaleSlider);
     //responsive code end
 
-    $('.next_step').on('click', function(){
+    $('.next_step').on('click', function () {
       //validate form
       //var $requiredInput = $('.required_input');
       //for(var i = 0; i < $requiredInput.length; i++){
@@ -70,32 +71,41 @@
       slides.$Next();
     });
 
-    $('.prev_step').on('click', function(){
+    $('.prev_step').on('click', function () {
       slides.$Prev();
     });
   };
 
-  var switchLoginRegister = function(){
+  var switchLoginRegister = function () {
     var loginSection = $('#login');
     var registerSection = $('#register');
     loginSection.find('p').addClass('show');
 
-    $('.switcher').on('click', function(ev){
-      var $wrapper = $('.wrapper');
+    $('.switcher').on('click', function (ev) {
       var $tgt = $(ev.target);
-      if($tgt.hasClass('to_register')){
+      if ($tgt.hasClass('to_register')) {
         $tgt.hide();
         $('.to_login').show();
-        $wrapper.css('top', '-100%');
-        registerSection.find('p').addClass('show');
-        loginSection.find('p').removeClass('show');
+        registerSection.css({
+          'transform': 'translate3D(0,0,0)',
+          'transition': 'transform 0.5s ease'
+        }).find('p').addClass('show');
+        loginSection.css({
+          'transform': 'translate3D(0,-100%,0)',
+          'transition': 'transform 0.5s ease'
+        }).find('p').removeClass('show');
       }
-      else{
+      else {
         $tgt.hide();
         $('.to_register').show();
-        $wrapper.css('top', '0');
-        loginSection.find('p').addClass('show');
-        registerSection.find('p').removeClass('show');
+        loginSection.css({
+          'transform': 'translate3D(0,0,0)',
+          'transition': 'transform 0.5s ease'
+        }).find('p').addClass('show');
+        registerSection.css({
+          'transform': 'translate3D(0,100%,0)',
+          'transition': 'transform 0.5s ease'
+        }).find('p').removeClass('show');
       }
     });
   }
