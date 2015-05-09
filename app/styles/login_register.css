@@ -221,6 +221,7 @@ button {
 }
 
 #register {
+  -webkit-transform: translate3D(0, 568px, 0);
   transform: translate3D(0, 568px, 0);
   background-color: #f2f2f2;
   color: #7B7B7F;
