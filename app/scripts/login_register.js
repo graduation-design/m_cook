@@ -87,10 +87,12 @@
         $tgt.hide();
         $('.to_login').show();
         registerSection.css({
+          '-webkit-transform': 'translate3D(0,0,0)',
           'transform': 'translate3D(0,0,0)',
           'transition': 'transform 0.5s ease'
         }).find('p').addClass('show');
         loginSection.css({
+          '-webkit-transform': 'translate3D(0,-100%,0)',
           'transform': 'translate3D(0,-100%,0)',
           'transition': 'transform 0.5s ease'
         }).find('p').removeClass('show');
@@ -99,10 +101,12 @@
         $tgt.hide();
         $('.to_register').show();
         loginSection.css({
+          '-webkit-transform': 'translate3D(0,0,0)',
           'transform': 'translate3D(0,0,0)',
           'transition': 'transform 0.5s ease'
         }).find('p').addClass('show');
         registerSection.css({
+          '-webkit-transform': 'translate3D(0,100%,0)',
           'transform': 'translate3D(0,100%,0)',
           'transition': 'transform 0.5s ease'
         }).find('p').removeClass('show');
