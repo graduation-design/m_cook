@@ -184,7 +184,7 @@ input[type="radio"]:checked:after {
 }
 
 select {
-  border: none!important;
+  border: none;
   background-color: #fff;
 }
 
@@ -272,8 +272,8 @@ button {
 
 .dist_picker select {
   display: inline-block;
-  background-color: #f2f2f2!important;
-  border-bottom: 1px solid #999!important;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #999;
   width: 46%;
   margin-right: 8%;
 }
