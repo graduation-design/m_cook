@@ -28,6 +28,8 @@ h2 {
   position: absolute;
   top: 0;
   left: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .form_sec .content {
@@ -221,8 +223,8 @@ button {
 }
 
 #register {
-  -webkit-transform: translate3D(0, 568px, 0);
-  transform: translate3D(0, 568px, 0);
+  -webkit-transform: translate3D(0, 100%, 0);
+  transform: translate3D(0, 100%, 0);
   background-color: #f2f2f2;
   color: #7B7B7F;
 }

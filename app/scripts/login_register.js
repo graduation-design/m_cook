@@ -2,8 +2,15 @@
   'use strict';
 
   $(function () {
-    switchLoginRegister();
-    registerSteps();
+    //get viewport rect
+    var $viewport = $('.viewport');
+    var viewportRect = {
+      'width': $viewport.width(),
+      'height': $viewport.height()
+    };
+
+    switchLoginRegister(viewportRect);
+    registerSteps(viewportRect);
 
     $('#register_avatar').on('change', function () {
       readURL(this, $('.placeholder_img'));
@@ -23,18 +30,16 @@
     }
   };
 
-  var registerSteps = function () {
-    var $viewport = $('.viewport');
-    var height = $viewport.height();
-    $('.slides').css('height', height);
+  var registerSteps = function (viewportRect) {
+    $('.slides').css('height', viewportRect.height);
     var slides = new $JssorSlider$('register_slider', {
       $DragOrientation: 0,
       $AutoPlay: false,
       $Loop: 0,
       $DragOrientations: 1,
       $StartIndex: location.hash.slice(1) || 0,
-      $SlideWidth: $viewport.width(),
-      $SlideHeight: height
+      $SlideWidth: viewportRect.width,
+      $SlideHeight: viewportRect.height
       //$HWA: false
     });
 
@@ -88,13 +93,11 @@
         $('.to_login').show();
         registerSection.css({
           '-webkit-transform': 'translate3D(0,0,0)',
-          'transform': 'translate3D(0,0,0)',
-          'transition': 'transform 0.5s ease,-webkit-transform 0.5s ease'
+          'transform': 'translate3D(0,0,0)'
         }).find('p').addClass('show');
         loginSection.css({
           '-webkit-transform': 'translate3D(0,-100%,0)',
-          'transform': 'translate3D(0,-100%,0)',
-          'transition': 'transform 0.5s ease,-webkit-transform 0.5s ease'
+          'transform': 'translate3D(0,-100%,0)'
         }).find('p').removeClass('show');
       }
       else {
@@ -102,13 +105,11 @@
         $('.to_register').show();
         loginSection.css({
           '-webkit-transform': 'translate3D(0,0,0)',
-          'transform': 'translate3D(0,0,0)',
-          'transition': 'transform 0.5s ease,-webkit-transform 0.5s ease'
+          'transform': 'translate3D(0,0,0)'
         }).find('p').addClass('show');
         registerSection.css({
           '-webkit-transform': 'translate3D(0,100%,0)',
-          'transform': 'translate3D(0,100%,0)',
-          'transition': 'transform 0.5s ease,-webkit-transform 0.5s ease'
+          'transform': 'translate3D(0,100%,0)'
         }).find('p').removeClass('show');
       }
     });
