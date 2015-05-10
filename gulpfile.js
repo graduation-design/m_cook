@@ -17,11 +17,16 @@ gulp.task('styles', function () {
     .pipe(reload({stream: true}));
 });
 
+var testFunc1 = function(file){
+  return /.js$/.test(file.path) && !/vendor.js/.test(file.path);
+};
+
 gulp.task('html', ['styles'], function () {
   var assets = $.useref.assets({searchPath: ['.tmp', 'app', '.']});
 
   return gulp.src('app/*.html')
     .pipe(assets)
+    .pipe($.if(testFunc1, $.babel()))
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.csso()))
     .pipe(assets.restore())
