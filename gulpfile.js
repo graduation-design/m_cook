@@ -17,13 +17,18 @@ gulp.task('styles', function () {
     .pipe(reload({stream: true}));
 });
 
+var vendorFilter = function(file){
+  console.log(file.name);
+  return false;
+};
+
 gulp.task('html', ['styles'], function () {
   var assets = $.useref.assets({searchPath: ['.tmp', 'app', '.']});
 
   return gulp.src('app/*.html')
     .pipe(assets)
+    .pipe($.if(['*.js', '!script/vendor.js'], $.babel()))
     .pipe($.if('*.js', $.uglify()))
-    //.pipe($.if('*.js', $.babel()))
     .pipe($.if('*.css', $.csso()))
     .pipe(assets.restore())
     .pipe($.useref())
