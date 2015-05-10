@@ -24,7 +24,8 @@ body {
 
 .list_section .section_header {
   margin: 0;
-  font-size: 0.36rem;
+  font-size: 0.4rem;
+  padding-left: 0.16rem;
 }
 
 .list_section li > * {
