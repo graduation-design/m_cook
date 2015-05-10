@@ -1,1 +1,21 @@
-"use strict";!function(){for(var t=0;10>t;t++)console.log(t);console.log(i),$(function(){$(".list_section").on("click","li",function(t){var c=$(t.currentTarget);c.css("background-color","#ccc"),setTimeout(function(){c.css("background-color","transparent")},300),Android.callDetailPage(c.attr("data-id"),c.attr("data-type"))})})}(jQuery);
+(function(){
+  'use strict';
+
+  for(let i = 0; i < 10; i++ ){
+    console.log(i);
+  }
+  console.log(i);
+
+  $(function(){
+    $('.list_section').on('click', 'li', function(ev){
+      var $tgtItem = $(ev.currentTarget);
+
+      $tgtItem.css('background-color', '#ccc');
+      setTimeout(function(){
+        $tgtItem.css('background-color', 'transparent');
+      },300);
+
+      Android.callDetailPage($tgtItem.attr('data-id'), $tgtItem.attr('data-type'));
+    });
+  })
+})(jQuery);

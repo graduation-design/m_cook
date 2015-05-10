@@ -1,1 +1,130 @@
-"use strict";function bindMaterialEvent(){var e=$(".food_material");$(".material .add").on("click",function(){addMaterial()}),e.on("click",".delete",function(t){1!==e.find("li").length&&$(t.target).parents("li").remove()}),e.on("blur","li",function(e){$(e.currentTarget).find(".delete").fadeOut()}),e.on("focus","li",function(e){$(e.currentTarget).find(".delete").fadeIn()})}function bindStepEvent(){var e=$(".food-step");e.on("focus",".step-text",function(e){$(e.target).siblings(".btn").fadeIn()}),e.on("blur",".step-text",function(e){$(e.target).siblings(".btn").fadeOut()}),e.on("click",".add",function(e){addStep($(e.target).parents("li"))}),e.on("click",".delete",function(e){deleteStep($(e.target).parents("li"))})}function addMaterial(){var e='<li class="one_material">    <input name="food_name" placeholder="如 鸡蛋" class="one_piece">    <input name="food_quantity" placeholder="如 一个" class="amount_material">    <span class="fontawesome-minus-sign delete"></span>    </li>';$(".food_material").append(e)}function addStep(e){var t='<li class="each-step">    <div class="step-pic">    <span class="fontawesome-camera"></span>    <input class="file_selector" type="file" accept="image/*"/>    </div>    <div class="step-num">1</div>    <textarea name="step_content" rows="5" class="step-text"></textarea>    <div class="btn">    <div class="fontawesome-minus-sign delete"></div>    <div class="fontawesome-plus-sign add"></div>    </div>    </li>';$(t).insertAfter(e),resetStepNum()}function deleteStep(e){$(".each-step").length<=1||(e.remove(),resetStepNum())}function resetStepNum(){for(var e=$(".step .step-num"),t=0;t<e.length;t++)$(e[t]).text(t+1)}function imgUpload(e,t){var a=new FormData,n=0;n="main_pic_selector"===e.attr("id")?0:e.parents("li").index()+1,readURL(e[0],e.siblings(".pic_placeholder")),a.append("uuid",t),a.append("index",n),a.append("img",e[0].files[0]),$.ajax({url:$("#J_pic_upload_url").val(),type:"POST",data:a,cache:!1,dataType:"json",processData:!1,contentType:!1,success:function(e,t,a){}})}function readURL(e,t){if(e.files&&e.files[0]){var a=new FileReader;a.onload=function(e){t.attr("src",e.target.result),t.css("display","block")},a.readAsDataURL(e.files[0])}}$(function(){var e=$("#uuid").val();$(".file_selector").on("change",function(t){imgUpload($(t.target),e)}),bindMaterialEvent(),bindStepEvent()});
+$(function () {
+  var uuid = $('#uuid').val();
+
+  $('.file_selector').on('change', function (ev) {
+    imgUpload($(ev.target), uuid)
+  });
+  bindMaterialEvent();
+  bindStepEvent();
+});
+
+function bindMaterialEvent() {
+  var $material = $('.food_material');
+  $('.material .add').on('click', function () {
+    addMaterial();
+  });
+
+  $material.on('click', '.delete', function (ev) {
+    if ($material.find('li').length === 1) return;
+    $(ev.target).parents('li').remove();
+  });
+
+  $material.on('blur', 'li', function (ev) {
+    $(ev.currentTarget).find('.delete').fadeOut();
+  });
+
+  $material.on('focus', 'li', function (ev) {
+    $(ev.currentTarget).find('.delete').fadeIn();
+  });
+}
+
+function bindStepEvent() {
+  var $steps = $('.food-step');
+  $steps.on('focus', '.step-text', function (ev) {
+    $(ev.target).siblings('.btn').fadeIn();
+  });
+  $steps.on('blur', '.step-text', function (ev) {
+    $(ev.target).siblings('.btn').fadeOut();
+  });
+
+  $steps.on('click', '.add', function (ev) {
+    addStep($(ev.target).parents('li'));
+  });
+  $steps.on('click', '.delete', function (ev) {
+    deleteStep($(ev.target).parents('li'));
+  })
+}
+
+function addMaterial() {
+  var tpl = '<li class="one_material">\
+    <input name="food_name" placeholder="如 鸡蛋" class="one_piece">\
+    <input name="food_quantity" placeholder="如 一个" class="amount_material">\
+    <span class="fontawesome-minus-sign delete"></span>\
+    </li>';
+
+  $('.food_material').append(tpl);
+}
+
+function addStep(tgt) {
+  var tpl = '<li class="each-step">\
+    <div class="step-pic">\
+    <span class="fontawesome-camera"></span>\
+    <input class="file_selector" type="file" accept="image/*"/>\
+    </div>\
+    <div class="step-num">1</div>\
+    <textarea name="step_content" rows="5" class="step-text"></textarea>\
+    <div class="btn">\
+    <div class="fontawesome-minus-sign delete"></div>\
+    <div class="fontawesome-plus-sign add"></div>\
+    </div>\
+    </li>';
+  $(tpl).insertAfter(tgt);
+
+  resetStepNum();
+}
+
+function deleteStep(step) {
+  if ($('.each-step').length <= 1) return;
+  step.remove();
+  resetStepNum();
+}
+
+function resetStepNum() {
+  var numDom = $('.step .step-num');
+
+  for (var i = 0; i < numDom.length; i++) {
+    $(numDom[i]).text(i + 1);
+  }
+}
+
+function imgUpload(fileInput, uuid) {
+  var formData = new FormData();
+  var index = 0;
+
+  if (fileInput.attr('id') === 'main_pic_selector') {
+    index = 0;
+  } else {
+    index = fileInput.parents('li').index() + 1;
+  }
+
+  readURL(fileInput[0], fileInput.siblings('.pic_placeholder'));
+
+  formData.append('uuid', uuid);
+  formData.append('index', index);
+  formData.append('img', fileInput[0].files[0]);
+
+  $.ajax({
+    url: $('#J_pic_upload_url').val(),
+    type: 'POST',
+    data: formData,
+    cache: false,
+    dataType: 'json',
+    processData: false, // Don't process the files
+    contentType: false, // Set content type to false as jQuery will tell the server its a query string request
+    success: function (data, textStatus, jqXHR) {
+    }
+  });
+}
+
+function readURL(input, $tgtImg) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+      $tgtImg.attr('src', e.target.result);
+      $tgtImg.css('display', 'block');
+    };
+
+    reader.readAsDataURL(input.files[0]);
+  }
+}

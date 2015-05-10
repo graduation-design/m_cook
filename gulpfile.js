@@ -17,20 +17,16 @@ gulp.task('styles', function () {
     .pipe(reload({stream: true}));
 });
 
-var vendorFilter = function(file){
-  if(/js$/.test(file.path))
-    return !(/vendor.js/.test(file.path));
-  
-  return false;
-};
-
 gulp.task('html', ['styles'], function () {
+  gulp.src('app/scripts/*.js')
+    .pipe($.babel())
+    .pipe(gulp.dest('.tmp'));
+
   var assets = $.useref.assets({searchPath: ['.tmp', 'app', '.']});
 
   return gulp.src('app/*.html')
     .pipe(assets)
-    .pipe($.if(vendorFilter, $.babel()))
-    .pipe($.if('*.js', $.uglify()))
+    .pipe($.if(['vendor.js','.tmp/*js'], $.uglify()))
     .pipe($.if('*.css', $.csso()))
     .pipe(assets.restore())
     .pipe($.useref())
