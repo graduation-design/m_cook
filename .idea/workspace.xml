@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23e9668d-21da-4272-bf8a-747af1e0a80c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/scripts/cookbook.js" afterPath="$PROJECT_DIR$/dist/scripts/cookbook.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/scripts/distpicker.js" afterPath="$PROJECT_DIR$/dist/scripts/distpicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/scripts/jssor.slider.min.js.js" afterPath="$PROJECT_DIR$/dist/scripts/jssor.slider.min.js.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/scripts/knowledge.js" afterPath="$PROJECT_DIR$/dist/scripts/knowledge.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/list.js" afterPath="$PROJECT_DIR$/app/scripts/list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/scripts/list.js" afterPath="$PROJECT_DIR$/dist/scripts/list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/scripts/login_register.js" afterPath="$PROJECT_DIR$/dist/scripts/login_register.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/scripts/main.js" afterPath="$PROJECT_DIR$/dist/scripts/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/scripts/step_detail.js" afterPath="$PROJECT_DIR$/dist/scripts/step_detail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/scripts/upload_cookbook.js" afterPath="$PROJECT_DIR$/dist/scripts/upload_cookbook.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="m_cook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,11 +33,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="list.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/styles/list.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24257426">
+            <state vertical-scroll-proportion="0.0">
               <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/scripts/list.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.041254126">
+              <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -169,7 +168,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -183,7 +182,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -608,14 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1650165">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.330033">
@@ -628,8 +619,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/list.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24257426">
+        <state vertical-scroll-proportion="0.0">
           <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.041254126">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
           <folding />
         </state>
       </provider>
