@@ -1,1 +1,1 @@
-!function(){"use strict";$(function(){$(".list_section").on("click","li",function(t){var a=$(t.currentTarget);Android.callDetailPage(a.attr("data-id"),a.attr("data-type"))})})}(jQuery);
+!function(){"use strict";$(function(){$(".list_section").on("click","li",function(t){var c=$(t.currentTarget);c.css("background-color","#ccc"),setTimeout(function(){c.css("background-color","transparent")},300),Android.callDetailPage(c.attr("data-id"),c.attr("data-type"))})})}(jQuery);
