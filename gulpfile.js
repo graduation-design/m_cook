@@ -18,7 +18,9 @@ gulp.task('styles', function () {
 });
 
 var vendorFilter = function(file){
-  console.log(file.name);
+  if(/js$/.test(file.path))
+    return !(/vendor.js/.test(file.path));
+  
   return false;
 };
 
@@ -27,7 +29,7 @@ gulp.task('html', ['styles'], function () {
 
   return gulp.src('app/*.html')
     .pipe(assets)
-    .pipe($.if('*.js', $.babel()))
+    .pipe($.if(vendorFilter, $.babel()))
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.csso()))
     .pipe(assets.restore())
