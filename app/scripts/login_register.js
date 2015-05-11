@@ -11,11 +11,19 @@
 
     switchLoginRegister(viewportRect);
     registerSteps(viewportRect);
+    validateFormSubmit();
+
 
     $('#register_avatar').on('change', function () {
       readURL(this, $('.placeholder_img'));
     })
   });
+
+  var validateFormSubmit = function () {
+    $('form').on('submit', function () {
+      if (!validateInput($(this).find('input[required]'))) return false;
+    })
+  };
 
   var readURL = function (input, $tgtImg) {
     if (input.files && input.files[0]) {
@@ -28,6 +36,48 @@
 
       reader.readAsDataURL(input.files[0]);
     }
+  };
+
+  var validateInput = function ($input) {
+    let showMsg = function ($container) {
+      $container.css({
+        '-webkit-transform': 'translate3D(0, -50px, 0)'
+        'transform': 'translate3D(0, -50px, 0)'
+      });
+      setTimeout(function () {
+        $container.css({
+          '-webkit-transform': 'translate3D(0, 50px, 0)'
+          'transform': 'translate3D(0, 50px, 0)'
+        })
+      }, 5000)
+    };
+    for (let i = 0; i < $input.length; i++) {
+      let $item = $($input[i]);
+      if ($item.val().trim() === '') {
+        let $msgContainer = $('#error_msg'), placeholder = $item.attr('placeholder');
+        if ($msgContainer.length === 0) {
+          $msgContainer = $('<span style="position:fixed;' +
+            'width:80%;' +
+            'left:50%;' +
+            'margin-left: -40%;' +
+            'right:0;' +
+            'padding: 0.12rem 0;' +
+            'text-align: center;' +
+            ' bottom: 0;' +
+            '-webkit-transform: translate3D(0, 50px, 0); ' +
+            'transform: translate3D(0, 50px, 0); ' +
+            '-webkit-transition: all 0.2s ease;' +
+            'transition: all 0.2s ease;">${placeholder} 不能为空</span>')
+            .appendTo('body');
+        } else {
+          $msgContainer.text('${placeholder} 不能为空');
+        }
+        showMsg($msgContainer);
+        $item.trigger('focus');
+        return false;
+      }
+    }
+    return true;
   };
 
   var registerSteps = function (viewportRect) {
@@ -66,13 +116,8 @@
 
     $('.next_step').on('click', function () {
       //validate form
-      //var $requiredInput = $('.required_input');
-      //for(var i = 0; i < $requiredInput.length; i++){
-      //  if(!$requiredInput[i].checkValidity()){
-      //    $('#register_btn').click();
-      //    return;
-      //  }
-      //}
+      if (!validateInput($('.required_input'))) return;
+
       slides.$Next();
     });
 

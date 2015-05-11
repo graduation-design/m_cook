@@ -8,7 +8,7 @@
       $tgtItem.css('background-color', '#ccc');
       setTimeout(function(){
         $tgtItem.css('background-color', 'transparent');
-      },300);
+      },100);
 
       Android.callDetailPage($tgtItem.attr('data-id'), $tgtItem.attr('data-type'));
     });
