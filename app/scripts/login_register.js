@@ -49,28 +49,33 @@
           '-webkit-transform': 'translate3D(0, 50px, 0)',
           'transform': 'translate3D(0, 50px, 0)'
         })
-      }, 5000)
+      }, 2300)
     };
     for (let i = 0; i < $input.length; i++) {
       let $item = $($input[i]);
       if ($item.val().trim() === '') {
         let $msgContainer = $('#error_msg'), placeholder = $item.attr('placeholder');
         if ($msgContainer.length === 0) {
-          $msgContainer = $('<span style="position:fixed;' +
-            'width:80%;' +
-            'left:50%;' +
-            'margin-left: -40%;' +
-            'right:0;' +
-            'padding: 0.12rem 0;' +
-            'text-align: center;' +
-            ' bottom: 0;' +
-            '-webkit-transform: translate3D(0, 50px, 0); ' +
-            'transform: translate3D(0, 50px, 0); ' +
-            '-webkit-transition: all 0.2s ease;' +
-            'transition: all 0.2s ease;">${placeholder} 不能为空</span>')
+          $msgContainer = $(`<span id="error_msg" style="
+            position:fixed;
+            width:70%;
+            left:50%;
+            margin-left: -35%;
+            right:0;
+            padding: 0.12rem 0;
+            text-align: center;
+             bottom: 0;
+            -webkit-transform: translate3D(0, 50px, 0);
+            transform: translate3D(0, 50px, 0);
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+            color: #fff;
+            background-color: rgba(0,0,0,0.6);
+            font-size: 0.24rem;
+            border-radius: 3px;">${placeholder} 不能为空</span>`)
             .appendTo('body');
         } else {
-          $msgContainer.text('${placeholder} 不能为空');
+          $msgContainer.text(`${placeholder} 不能为空`);
         }
         showMsg($msgContainer);
         $item.trigger('focus');
