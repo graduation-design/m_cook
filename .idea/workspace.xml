@@ -2,43 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23e9668d-21da-4272-bf8a-747af1e0a80c" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\comments.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\cookbook.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\knowledge.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\list.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\login_register.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\moments.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\personal.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\scripts\cookbook.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\scripts\distpicker.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\scripts\jssor.slider.min.js.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\scripts\knowledge.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\scripts\list.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\scripts\login_register.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\scripts\main.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\scripts\step_detail.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\scripts\upload_cookbook.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\scripts\vendor.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\scripts\vendor.js0" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\step_detail.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\styles\comments.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\styles\common.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\styles\cookbook.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\styles\knowledge.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\styles\list.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\styles\login_register.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\styles\main.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\styles\moments.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\styles\step_detail.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\styles\upload_cookbook.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\styles\upload_knowledge.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\test.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\upload_cookbook.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\upload_knowledge.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/list.css" afterPath="$PROJECT_DIR$/app/styles/list.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/list.js" afterPath="$PROJECT_DIR$/app/scripts/list.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/moments.css" afterPath="$PROJECT_DIR$/app/styles/moments.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/moments.html" afterPath="$PROJECT_DIR$/app/moments.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="m_cook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,31 +26,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="login_register.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/login_register.js">
+      <file leaf-file-name="moments.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/moments.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.14204545">
+              <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/styles/list.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.597561">
-              <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/list.js">
+      <file leaf-file-name="moments.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/styles/moments.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+              <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -118,8 +75,6 @@
         <option value="$PROJECT_DIR$/app/scripts/knowledge.js" />
         <option value="$PROJECT_DIR$/app/knowledge.html" />
         <option value="$PROJECT_DIR$/app/styles/knowledge.css" />
-        <option value="$PROJECT_DIR$/app/styles/moments.css" />
-        <option value="$PROJECT_DIR$/app/moments.html" />
         <option value="$PROJECT_DIR$/app/list.html" />
         <option value="$PROJECT_DIR$/app/scripts/upload_knowledge.js" />
         <option value="$PROJECT_DIR$/app/test.html" />
@@ -130,8 +85,10 @@
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/dist/styles/list.css" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/app/scripts/list.js" />
         <option value="$PROJECT_DIR$/app/styles/list.css" />
+        <option value="$PROJECT_DIR$/app/scripts/list.js" />
+        <option value="$PROJECT_DIR$/app/styles/moments.css" />
+        <option value="$PROJECT_DIR$/app/moments.html" />
       </list>
     </option>
   </component>
@@ -206,6 +163,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m_cook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m_cook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -522,20 +497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/moments.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/moments.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.941176">
-          <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/upload_knowledge.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.76287264">
@@ -606,14 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/login_register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -656,15 +609,39 @@
     <entry file="file://$PROJECT_DIR$/app/scripts/list.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/list.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.597561">
-          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.43926555">
+          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/login_register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/moments.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/moments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14204545">
+          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
           <folding />
         </state>
       </provider>
