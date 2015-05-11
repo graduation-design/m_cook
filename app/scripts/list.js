@@ -2,13 +2,20 @@
   'use strict';
 
   $(function(){
-    $('.list_section').on('click', 'li', function(ev){
-      var $tgtItem = $(ev.currentTarget);
+    var listSection = $('.list_section');
 
+    listSection.on('touchstart', 'li', function(ev){
+      var $tgtItem = $(ev.currentTarget);
       $tgtItem.css('background-color', '#ccc');
-      setTimeout(function(){
-        $tgtItem.css('background-color', 'transparent');
-      },300);
+    });
+
+    listSection.on('touchend', 'li', function(ev){
+      var $tgtItem = $(ev.currentTarget);
+      $tgtItem.css('background-color', 'transparent');
+    });
+
+    listSection.on('click', 'li', function(ev){
+      var $tgtItem = $(ev.currentTarget);
 
       Android.callDetailPage($tgtItem.attr('data-id'), $tgtItem.attr('data-type'));
     });
