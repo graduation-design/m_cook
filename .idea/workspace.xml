@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23e9668d-21da-4272-bf8a-747af1e0a80c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/list.js" afterPath="$PROJECT_DIR$/app/scripts/list.js" />
+      <change type="DELETED" beforePath="C:\Users\1\m_cook\dist\scripts\vendor.js0" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/moments.css" afterPath="$PROJECT_DIR$/app/styles/moments.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/moments.html" afterPath="$PROJECT_DIR$/app/moments.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="m_cook.iws" />
@@ -26,21 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="moments.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="moments.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/moments.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14204545">
-              <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+            <state vertical-scroll-proportion="-9.676471">
+              <caret line="96" column="16" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="moments.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="moments.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/styles/moments.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.3604336">
+              <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -87,8 +86,8 @@
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/app/styles/list.css" />
         <option value="$PROJECT_DIR$/app/scripts/list.js" />
-        <option value="$PROJECT_DIR$/app/styles/moments.css" />
         <option value="$PROJECT_DIR$/app/moments.html" />
+        <option value="$PROJECT_DIR$/app/styles/moments.css" />
       </list>
     </option>
   </component>
@@ -630,18 +629,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/moments.css">
+    <entry file="file://$PROJECT_DIR$/app/moments.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+        <state vertical-scroll-proportion="-9.676471">
+          <caret line="96" column="16" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/moments.html">
+    <entry file="file://$PROJECT_DIR$/app/styles/moments.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14204545">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.3604336">
+          <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
           <folding />
         </state>
       </provider>
