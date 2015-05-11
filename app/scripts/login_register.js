@@ -41,12 +41,12 @@
   var validateInput = function ($input) {
     let showMsg = function ($container) {
       $container.css({
-        '-webkit-transform': 'translate3D(0, -50px, 0)'
+        '-webkit-transform': 'translate3D(0, -50px, 0)',
         'transform': 'translate3D(0, -50px, 0)'
       });
       setTimeout(function () {
         $container.css({
-          '-webkit-transform': 'translate3D(0, 50px, 0)'
+          '-webkit-transform': 'translate3D(0, 50px, 0)',
           'transform': 'translate3D(0, 50px, 0)'
         })
       }, 5000)
