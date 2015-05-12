@@ -4,7 +4,7 @@
   $(function () {
     var msg = new MsgDisplayer();
 
-    sectionTranslate();
+    sectionTranslate(msg);
     errorHandler(msg);
     validateFormSubmit(msg);
 
@@ -14,15 +14,15 @@
     })
   });
 
-  var errorHandler = function(msg){
-    var val = $('#J_error_msg').val()
-    if(val !== '') {
+  var errorHandler = function (msg) {
+    var val = $('#J_error_msg').val();
+    if (val !== '') {
       msg.setText(val);
       msg.showMsg();
     }
   };
 
-  var sectionTranslate = function(){
+  var sectionTranslate = function (msg) {
     //get viewport rect
     var $viewport = $('.viewport');
     var viewportRect = {
@@ -31,7 +31,7 @@
     };
     //section translate
     switchLoginRegister(viewportRect);
-    registerSteps(viewportRect);
+    registerSteps(viewportRect, msg);
   };
 
 
@@ -57,7 +57,7 @@
       .appendTo('body');
   };
 
-  MsgDisplayer.prototype.showMsg = function(){
+  MsgDisplayer.prototype.showMsg = function () {
     var self = this;
     this.$msgContainer.css({
       '-webkit-transform': 'translate3D(0, -50px, 0)',
@@ -71,7 +71,7 @@
     }, 2300);
   };
 
-  MsgDisplayer.prototype.setText = function(info){
+  MsgDisplayer.prototype.setText = function (info) {
     this.$msgContainer.text(info);
   };
 
@@ -109,7 +109,7 @@
     return true;
   };
 
-  var registerSteps = function (viewportRect) {
+  var registerSteps = function (viewportRect, msg) {
     $('.slides').css('height', viewportRect.height);
     var slides = new $JssorSlider$('register_slider', {
       $DragOrientation: 0,
@@ -145,7 +145,7 @@
 
     $('.next_step').on('click', function () {
       //validate form
-      if (!validateInput($('.required_input'))) return;
+      if (!validateInput($('.required_input'), msg)) return;
 
       slides.$Next();
     });
