@@ -92,3 +92,14 @@ body {
 .social_toolbar li:last-child:after {
   border: none;
 }
+
+.social_toolbar li .icon {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.social_toolbar li.liked .icon{
+  color: #b486ff;
+}

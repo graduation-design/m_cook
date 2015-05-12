@@ -8,8 +8,6 @@ $(function () {
   //things before submit
   $('#form').on('submit', function(){
     addTags();
-
-    return false;
   });
 
   bindMaterialEvent();
