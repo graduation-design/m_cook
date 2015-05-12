@@ -1,7 +1,19 @@
 $(function () {
-  var uuid = $('#uuid').val();
+  //init uuid
+  var uuid = 0;
+
+  $.getJSON('#', function (data) {
+    $('#uuid').val(data.uuid);
+    uuid = data.uuid;
+  });
 
   $('.file_selector').on('change', function (ev) {
+    var $tgt = $(ev.target);
+    if(uuid === 0) {
+      alert('初始化失败');
+      $tgt.val('');
+      return;
+    }
     imgUpload($(ev.target), uuid)
   });
 
@@ -13,6 +25,10 @@ $(function () {
   bindMaterialEvent();
   bindStepEvent();
 });
+
+function getUuid(){
+
+}
 
 function addTags(){
   var string = $('.tags').val().trim().replace(/ +/g, ' ');

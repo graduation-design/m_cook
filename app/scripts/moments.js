@@ -7,8 +7,8 @@
     bindSTEvent();
   });
 
-  var toDetailEvent = function(){
-    $('.moment_list').on('click', '.post_img a', function(ev){
+  var toDetailEvent = function () {
+    $('.moment_list').on('click', '.post_img a', function (ev) {
       var $tgt = $(ev.currentTarget);
       var $momentsItem = $tgt.parents('.moment_item');
 
@@ -23,7 +23,7 @@
       var $tgt = $(ev.currentTarget);
       var $momentsItem = $tgt.parents('.moment_item');
       duangIcon($tgt.find('.icon'));
-      $.getJSON($momentsList.attr('data-share'),{
+      $.getJSON($momentsList.attr('data-share'), {
         id: $momentsItem.attr('data-id'),
         type: $momentsItem.attr('data-type')
       }, function () {
