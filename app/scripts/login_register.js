@@ -15,8 +15,8 @@
   });
 
   var errorHandler = function (msg) {
-    var val = $('#J_error_msg').val();
-    if (val !== '') {
+    var val = $('#J_error_msg').val().trim();
+    if (val !== '${error_msg}') {
       msg.setText(val);
       msg.showMsg();
     }
