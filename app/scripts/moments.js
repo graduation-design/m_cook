@@ -2,8 +2,19 @@
   'use strict';
 
   $(function () {
+    toDetailEvent();
+
     bindSTEvent();
   });
+
+  var toDetailEvent = function(){
+    $('.moment_list').on('click', '.post_img a', function(ev){
+      var $tgt = $(ev.currentTarget);
+      var $momentsItem = $tgt.parents('.moment_item');
+
+      Android.callDetailPage($momentsItem.attr('data-id'), $momentsItem.attr('data-type'));
+    })
+  };
 
   //bind SocialToolbar event
   var bindSTEvent = function () {

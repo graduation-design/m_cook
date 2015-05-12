@@ -8,7 +8,7 @@ body {
 
 .moment_item {
   background-color: #fff;
-  padding: 0.12rem 0.24rem;
+  padding: 0.12rem 0.24rem 0;
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #d8d8d8;
   margin-top: 0.24rem;
@@ -66,7 +66,7 @@ body {
 .social_toolbar{
   font-size: 0;
   display: flex;
-  padding: 0.2rem 0 0.08rem;
+  padding: 0.2rem 0 0;
 }
 
 .social_toolbar li {
@@ -78,12 +78,13 @@ body {
   -webkit-box-flex: 1;
   flex: 1;
   text-align: center;
+  padding: 0.12rem 0;
 }
 
 .social_toolbar li:after {
   content: '';
   position: absolute;
-  top: 0.06rem;
+  top: 0.18rem;
   right: 0;
   height: 0.28rem;
   border-left: 1px solid #ccc;
