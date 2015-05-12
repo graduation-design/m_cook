@@ -4,9 +4,34 @@ $(function () {
   $('.file_selector').on('change', function (ev) {
     imgUpload($(ev.target), uuid)
   });
+
+  //things before submit
+  $('#form').on('submit', function(){
+    addTags();
+
+    return false;
+  });
+
   bindMaterialEvent();
   bindStepEvent();
 });
+
+function addTags(){
+  var string = $('.tags').val().trim().replace(/ +/g, ' ');
+  var tmp = [],tags = [];
+  var tpl = ``;
+  if(string !== '')
+    tmp = string.split(' ').sort();
+
+  for(var i = 0; i < tmp.length; i++)
+    if(tmp[i] !== tmp[i+1]) tags.push(tmp[i]);
+
+
+  tags.forEach(function(item){
+    tpl += `<input type="hidden" name="food_class" value="${item}"/>`;
+  });
+  $('#form').append($(tpl));
+}
 
 function bindMaterialEvent() {
   var $material = $('.food_material');

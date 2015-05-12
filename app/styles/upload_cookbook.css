@@ -177,6 +177,13 @@ h3 {
   height: 1.2rem;
 }
 
+.tags {
+  border-radius: 3px;
+  height: 0.64rem;
+  width: 98%;
+  padding: 2px;
+}
+
 .release_wrap {
   text-align: center;
   padding-top: 0.24rem;
