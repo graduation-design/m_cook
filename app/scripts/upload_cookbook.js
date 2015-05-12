@@ -2,14 +2,14 @@ $(function () {
   //init uuid
   var uuid = 0;
 
-  $.getJSON('#', function (data) {
+  $.getJSON($('#J_uuid_url').val(), function (data) {
     $('#uuid').val(data.uuid);
     uuid = data.uuid;
   });
 
   $('.file_selector').on('change', function (ev) {
     var $tgt = $(ev.target);
-    if(uuid === 0) {
+    if (uuid === 0) {
       alert('初始化失败');
       $tgt.val('');
       return;
@@ -18,7 +18,7 @@ $(function () {
   });
 
   //things before submit
-  $('#form').on('submit', function(){
+  $('#form').on('submit', function () {
     addTags();
   });
 
@@ -26,22 +26,22 @@ $(function () {
   bindStepEvent();
 });
 
-function getUuid(){
+function getUuid() {
 
 }
 
-function addTags(){
+function addTags() {
   var string = $('.tags').val().trim().replace(/ +/g, ' ');
-  var tmp = [],tags = [];
+  var tmp = [], tags = [];
   var tpl = ``;
-  if(string !== '')
+  if (string !== '')
     tmp = string.split(' ').sort();
 
-  for(var i = 0; i < tmp.length; i++)
-    if(tmp[i] !== tmp[i+1]) tags.push(tmp[i]);
+  for (var i = 0; i < tmp.length; i++)
+    if (tmp[i] !== tmp[i + 1]) tags.push(tmp[i]);
 
 
-  tags.forEach(function(item){
+  tags.forEach(function (item) {
     tpl += `<input type="hidden" name="food_class" value="${item}"/>`;
   });
   $('#form').append($(tpl));
