@@ -19,10 +19,15 @@
   //bind SocialToolbar event
   var bindSTEvent = function () {
     var $momentsList = $('.moments_list');
+
     $momentsList.on('click', '.social_toolbar .share', function (ev) {
       var $tgt = $(ev.currentTarget);
+      var $shareNum = $tgt.find('.num');
       var $momentsItem = $tgt.parents('.moment_item');
       duangIcon($tgt.find('.icon'));
+
+      $shareNum.text(parseInt($shareNum.text()) + 1);
+
       $.getJSON($momentsList.attr('data-share'), {
         id: $momentsItem.attr('data-id'),
         type: $momentsItem.attr('data-type')
@@ -31,20 +36,55 @@
       });
     });
 
-    $momentsList.on('click', '.social_toolbar .comments', function (ev) {
+    $momentsList.on('click', '.social_toolbar .hate', function (ev) {
       var $tgt = $(ev.currentTarget);
       var $momentsItem = $tgt.parents('.moment_item');
+      var $hateNum = $tgt.find('.num');
+
+      var $like = $tgt.siblings('.like');
+      var $likeNum = $like.find('.num');
       duangIcon($tgt.find('.icon'));
-      Android.commentsPage($momentsItem.attr('data-id'), $momentsItem.attr('data-type'));
+
+      if ($tgt.hasClass('used')) {
+        $tgt.removeClass('used');
+        $hateNum.text(parseInt($hateNum.text()) - 1);
+      } else {
+        $tgt.addClass('used');
+        $hateNum.text(parseInt($hateNum.text()) + 1);
+
+        if ($like.hasClass('used')) {
+          $like.removeClass('used');
+          $likeNum.text(parseInt($likeNum.text()) - 1);
+        }
+      }
+
+      $.getJSON($momentsList.attr('data-hate'), {
+        isUsed: !$tgt.hasClass('used'),
+        id: $momentsItem.attr('data-id'),
+        type: $momentsItem.attr('data-type')
+      }, function () {
+
+      });
     });
 
     $momentsList.on('click', '.social_toolbar .like', function (ev) {
       var $tgt = $(ev.currentTarget);
+      var $likeNum = $tgt.find('.num');
       var $momentsItem = $tgt.parents('.moment_item');
+
+      if ($tgt.siblings('.hate').hasClass('used')) return;
+
       duangIcon($tgt.find('.icon'));
-      $tgt.toggleClass('liked');
+      if ($tgt.hasClass('used')) {
+        $tgt.removeClass('used');
+        $likeNum.text(parseInt($likeNum.text()) - 1);
+      } else {
+        $tgt.addClass('used');
+        $likeNum.text(parseInt($likeNum.text()) + 1);
+      }
+
       $.getJSON($momentsList.attr('data-like'), {
-        isLiked: !$tgt.hasClass('liked'),
+        isUsed: !$tgt.hasClass('used'),
         id: $momentsItem.attr('data-id'),
         type: $momentsItem.attr('data-type')
       }, function () {

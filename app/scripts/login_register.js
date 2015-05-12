@@ -2,26 +2,82 @@
   'use strict';
 
   $(function () {
+    var msg = new MsgDisplayer();
+
+    sectionTranslate();
+    errorHandler(msg);
+    validateFormSubmit(msg);
+
+    //upload avatar
+    $('#register_avatar').on('change', function () {
+      readURL(this, $('.placeholder_img'));
+    })
+  });
+
+  var errorHandler = function(msg){
+    var val = $('#J_error_msg').val()
+    if(val !== '') {
+      msg.setText(val);
+      msg.showMsg();
+    }
+  };
+
+  var sectionTranslate = function(){
     //get viewport rect
     var $viewport = $('.viewport');
     var viewportRect = {
       'width': $viewport.width(),
       'height': $viewport.height()
     };
-
+    //section translate
     switchLoginRegister(viewportRect);
     registerSteps(viewportRect);
-    validateFormSubmit();
+  };
 
 
-    $('#register_avatar').on('change', function () {
-      readURL(this, $('.placeholder_img'));
-    })
-  });
+  //message display class
+  var MsgDisplayer = function () {
+    this.$msgContainer = $(`<span id="error_msg" style="
+            position:fixed;
+            width:70%;
+            left:50%;
+            margin-left: -35%;
+            right:0;
+            padding: 0.12rem 0;
+            text-align: center;
+             bottom: 0;
+            -webkit-transform: translate3D(0, 50px, 0);
+            transform: translate3D(0, 50px, 0);
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+            color: #fff;
+            background-color: rgba(0,0,0,0.6);
+            font-size: 0.24rem;
+            border-radius: 3px;"></span>`)
+      .appendTo('body');
+  };
 
-  var validateFormSubmit = function () {
+  MsgDisplayer.prototype.showMsg = function(){
+    var self = this;
+    this.$msgContainer.css({
+      '-webkit-transform': 'translate3D(0, -50px, 0)',
+      'transform': 'translate3D(0, -50px, 0)'
+    });
+    setTimeout(function () {
+      self.$msgContainer.css({
+        '-webkit-transform': 'translate3D(0, 50px, 0)',
+        'transform': 'translate3D(0, 50px, 0)'
+      })
+    }, 2300);
+  };
+
+  MsgDisplayer.prototype.setText = function(info){
+    this.$msgContainer.text(info);
+  };
+
+  var validateFormSubmit = function (msg) {
     $('form').on('submit', function () {
-      if (!validateInput($(this).find('input[required]'))) return false;
+      if (!validateInput($(this).find('input[required]'), msg)) return false;
     })
   };
 
@@ -38,47 +94,15 @@
     }
   };
 
-  var validateInput = function ($input) {
-    let showMsg = function ($container) {
-      $container.css({
-        '-webkit-transform': 'translate3D(0, -50px, 0)',
-        'transform': 'translate3D(0, -50px, 0)'
-      });
-      setTimeout(function () {
-        $container.css({
-          '-webkit-transform': 'translate3D(0, 50px, 0)',
-          'transform': 'translate3D(0, 50px, 0)'
-        })
-      }, 2300)
-    };
+  var validateInput = function ($input, msg) {
     for (let i = 0; i < $input.length; i++) {
       let $item = $($input[i]);
       if ($item.val().trim() === '') {
-        let $msgContainer = $('#error_msg'), placeholder = $item.attr('placeholder');
-        if ($msgContainer.length === 0) {
-          $msgContainer = $(`<span id="error_msg" style="
-            position:fixed;
-            width:70%;
-            left:50%;
-            margin-left: -35%;
-            right:0;
-            padding: 0.12rem 0;
-            text-align: center;
-             bottom: 0;
-            -webkit-transform: translate3D(0, 50px, 0);
-            transform: translate3D(0, 50px, 0);
-            -webkit-transition: all 0.2s ease;
-            transition: all 0.2s ease;
-            color: #fff;
-            background-color: rgba(0,0,0,0.6);
-            font-size: 0.24rem;
-            border-radius: 3px;">${placeholder} 不能为空</span>`)
-            .appendTo('body');
-        } else {
-          $msgContainer.text(`${placeholder} 不能为空`);
-        }
-        showMsg($msgContainer);
-        $item.trigger('focus');
+        let placeholder = $item.attr('placeholder');
+        msg.setText(`${placeholder} 不能为空`);
+
+        msg.showMsg();
+        //$item.trigger('focus');
         return false;
       }
     }

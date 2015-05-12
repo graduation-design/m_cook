@@ -101,6 +101,6 @@ body {
   transform: scale(1);
 }
 
-.social_toolbar li.liked .icon{
+.social_toolbar li.used .icon{
   color: #b486ff;
 }
