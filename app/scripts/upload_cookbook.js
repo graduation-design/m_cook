@@ -1,24 +1,25 @@
 $(function () {
   //init uuid
   var uuid = 0;
+  var $form = $('#form');
 
   $.getJSON($('#J_uuid_url').val(), function (data) {
     $('#uuid').val(data.uuid);
     uuid = data.uuid;
   });
 
-  $('.file_selector').on('change', function (ev) {
+  $form.on('change', '.file_selector', function (ev) {
     var $tgt = $(ev.target);
     if (uuid === 0) {
       alert('初始化失败');
       $tgt.val('');
       return;
     }
-    imgUpload($(ev.target), uuid)
+    imgUpload($tgt, uuid)
   });
 
   //things before submit
-  $('#form').on('submit', function () {
+  $form.on('submit', function () {
     addTags();
   });
 
@@ -91,18 +92,19 @@ function addMaterial() {
 }
 
 function addStep(tgt) {
-  var tpl = '<li class="each-step">\
-    <div class="step-pic">\
-    <span class="fontawesome-camera"></span>\
-    <input class="file_selector" type="file" accept="image/*"/>\
-    </div>\
-    <div class="step-num">1</div>\
-    <textarea name="step_content" rows="5" class="step-text"></textarea>\
-    <div class="btn">\
-    <div class="fontawesome-minus-sign delete"></div>\
-    <div class="fontawesome-plus-sign add"></div>\
-    </div>\
-    </li>';
+  var tpl = `<li class="each-step">
+    <div class="step-pic">
+    <span class="fontawesome-camera"></span>
+    <img src="#" class="pic_placeholder"/>
+    <input class="file_selector" type="file" accept="image/*"/>
+    </div>
+    <div class="step-num">1</div>
+    <textarea name="step_content" rows="5" class="step-text"></textarea>
+    <div class="btn">
+    <div class="fontawesome-minus-sign delete"></div>
+    <div class="fontawesome-plus-sign add"></div>
+    </div>
+    </li>`;
   $(tpl).insertAfter(tgt);
 
   resetStepNum();
