@@ -26,10 +26,6 @@ $(function () {
   bindStepEvent();
 });
 
-function getUuid() {
-
-}
-
 function addTags() {
   var string = $('.tags').val().trim().replace(/ +/g, ' ');
   var tmp = [], tags = [];

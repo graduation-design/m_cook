@@ -120,11 +120,19 @@ ul, ol {
 }
 
 .step-pic {
+  position: relative;
   padding-bottom: 36%;
   height: 0;
   width: 36%;
   vertical-align: top;
   display: inline-block;
+}
+
+.step-pic a{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .step-pic img {

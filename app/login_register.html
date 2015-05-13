@@ -14,7 +14,7 @@
 </head>
 <body>
 <div class="viewport">
-  <input type="hidden" id="J_error_msg" value="登陆失败"/>
+  <input type="hidden" id="J_error_msg" value="${error_msg}"/>
   <section id="login" class="form_sec">
     <div class="content">
       <div class="middle_wrap">
@@ -23,12 +23,12 @@
           <div class="form_detail">
             <p class="dash_side">
               <label for="login_user_id">账号</label>
-              <input placeholder="账号" required type="text" id="login_user_id" name="user_id"/>
+              <input placeholder="账号" required type="text" id="login_user_id" name="user_id" tabindex="1"/>
             </p>
 
             <p class="dash_side">
               <label for="login_password">密码</label>
-              <input placeholder="密码" required type="password" id="login_password" name="password"/>
+              <input placeholder="密码" required type="password" id="login_password" name="password" tabindex="2"/>
             </p>
 
             <p class="btn_wrapper">
@@ -55,26 +55,26 @@
                     <p class="dash_side">
                       <label for="register_user_id">邮箱</label>
                       <input class="required_input" placeholder="邮箱" required type="email" id="register_user_id"
-                             name="user_id"/>
+                             name="user_id" tabindex="1"/>
                     </p>
 
                     <p class="dash_side">
                       <label for="register_password">密码</label>
                       <input class="required_input" placeholder="密码" required type="password" id="register_password"
-                             name="password"/>
+                             name="password" tabindex="2"/>
                     </p>
 
                     <p class="dash_side">
                       <label for="register_password_confirm">密码确认</label>
                       <input class="required_input" placeholder="密码确认" required type="password"
                              id="register_password_confirm"
-                             name="password"/>
+                             name="password" tabindex="3"/>
                     </p>
 
                     <p class="dash_side">
                       <label for="register_user_name">昵称</label>
                       <input class="required_input" placeholder="昵称" required type="text" id="register_user_name"
-                             name="user_name"/>
+                             name="user_name" tabindex="4"/>
                     </p>
 
                     <p class="btn_wrapper">
