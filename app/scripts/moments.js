@@ -94,8 +94,8 @@
 
     var duangIcon = function ($icon) {
       $icon.css({
-        '-webkit-transform': 'scale(1.5)',
-        'transform': 'scale(1.5)'
+        '-webkit-transform': 'scale(1.6)',
+        'transform': 'scale(1.6)'
       });
 
       setTimeout(function () {
