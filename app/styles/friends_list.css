@@ -1,0 +1,51 @@
+.friends_list {
+  color: #7B7B7F;
+  padding: 0 4%;
+}
+
+.friends_list li {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  opacity: 0;
+  font-size: 0;
+  padding: 0.2rem 0.24rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.friends_list li > div {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0.28rem;
+}
+
+.friends_list .avatar {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.friends_list .info {
+  padding-left: 0.2rem;
+  line-height: 0.6rem;
+}
+
+.friends_list .info .user_name {
+  color: #6b6b6f;
+}
+
+.friends_list .sex {
+  font-weight: 900;
+  font-size: 0.36rem;
+  text-shadow: 2px 2px 3px;
+}
+
+.blue {
+  color: deepskyblue;
+}
+
+.red {
+  color: indianred;
+}

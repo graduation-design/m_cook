@@ -8,15 +8,33 @@
   <!-- build:css styles/common.css -->
   <link rel="stylesheet" href="styles/common.css">
   <!-- endbuild -->
-  <!-- build:css styles/list.css -->
-  <link rel="stylesheet" href="styles/list.css">
+  <!-- build:css styles/friends_list.css -->
+  <link rel="stylesheet" href="styles/friends_list.css">
   <!-- endbuild -->
 </head>
 <body>
 <div class="wrapper">
-  <ul>
+  <ul class="friends_list">
     <li>
-
+      <div class="avatar"><img src="http://lorempixel.com/60/60"/></div>
+      <div class="info">
+        <div class="user_name">兔子爱吃胡萝卜咩 <span class="sex blue">♂</span></div>
+        <div class="sign">吃货们，high起来啊！！！</div>
+      </div>
+    </li>
+    <li>
+      <div class="avatar"><img src="http://lorempixel.com/60/60"/></div>
+      <div class="info">
+        <div class="user_name">兔子爱吃胡萝卜咩 <span class="sex red">♀</span></div>
+        <div class="sign">吃货们，high起来啊！！！</div>
+      </div>
+    </li>
+    <li>
+      <div class="avatar"><img src="http://lorempixel.com/60/60"/></div>
+      <div class="info">
+        <div class="user_name">兔子爱吃胡萝卜咩 <span class="sex red">♀</span></div>
+        <div class="sign">吃货们，high起来啊！！！</div>
+      </div>
     </li>
   </ul>
 </div>
@@ -25,6 +43,10 @@
 <!-- bower:js -->
 <script src="/bower_components/jquery/dist/jquery.js"></script>
 <!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js script/friends_list.js -->
+<script src="scripts/friends_list.js"></script>
 <!-- endbuild -->
 </body>
 </html>
