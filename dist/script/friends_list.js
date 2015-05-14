@@ -1,1 +1,1 @@
-"use strict";!function(s){s(function(){s(".friends_list li").css({"-webkit-transform":"scale(1)",transform:"scale(1)",opacity:1})})}(jQuery);
+"use strict";!function(t){t(function(){});var n=function i(t){t.css({"-webkit-transform":"translate3D(0,0,0)",transform:"translate3D(0,0,0)",opacity:1}),setTimeout(function(){i(t.next())},100)};window.onload=function(){t(".loading_cover").fadeOut(),n(t(".friends_list li:first-child"))}}(jQuery);

@@ -1,17 +1,19 @@
 .friends_list {
   color: #7B7B7F;
   padding: 0 4%;
+  width: 92%;
+  overflow: hidden;
 }
 
 .friends_list li {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  -webkit-transform: scale(0.5);
-  transform: scale(0.5);
+  -webkit-transform: translate3D(1rem,0,0);
+  transform: translate3D(1rem,0,0);
   opacity: 0;
   font-size: 0;
   padding: 0.2rem 0.24rem;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #eee;
 }
 
 .friends_list li > div {
@@ -34,6 +36,16 @@
 
 .friends_list .info .user_name {
   color: #6b6b6f;
+  width: 4rem;
+  overflow: hidden;white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.friends_list .info .sign {
+  width: 4rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .friends_list .sex {
