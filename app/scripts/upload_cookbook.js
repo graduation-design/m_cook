@@ -8,8 +8,9 @@ $(function () {
     uuid = data.uuid;
   });
 
-  $form.on('change', '.file_selector', function (ev) {
+  $(document).on('change', '.file_selector', function (ev) {
     var $tgt = $(ev.target);
+    console.log('tgt', $tgt);
     if (uuid === 0) {
       alert('初始化失败');
       $tgt.val('');
@@ -128,13 +129,13 @@ function imgUpload(fileInput, uuid) {
   var formData = new FormData();
   var index = 0;
 
-  if (fileInput.attr('id') === 'main_pic_selector') {
-    index = 0;
-  } else {
+  if (fileInput.attr('id') !== 'main_pic_selector') {
     index = fileInput.parents('li').index() + 1;
   }
 
   readURL(fileInput[0], fileInput.siblings('.pic_placeholder'));
+
+  console.log(fileInput);
 
   formData.append('uuid', uuid);
   formData.append('index', index);
