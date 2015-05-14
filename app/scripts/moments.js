@@ -29,7 +29,7 @@
       $shareNum.text(parseInt($shareNum.text()) + 1);
 
       $.getJSON($momentsList.attr('data-share'), {
-        id: $momentsItem.attr('data-id'),
+        obj_id: $momentsItem.attr('data-id'),
         type: $momentsItem.attr('data-type')
       }, function () {
 
@@ -59,8 +59,7 @@
       }
 
       $.getJSON($momentsList.attr('data-hate'), {
-        isUsed: !$tgt.hasClass('used'),
-        id: $momentsItem.attr('data-id'),
+        obj_id: $momentsItem.attr('data-id'),
         type: $momentsItem.attr('data-type')
       }, function () {
 
@@ -84,8 +83,7 @@
       }
 
       $.getJSON($momentsList.attr('data-like'), {
-        isUsed: !$tgt.hasClass('used'),
-        id: $momentsItem.attr('data-id'),
+        obj_id: $momentsItem.attr('data-id'),
         type: $momentsItem.attr('data-type')
       }, function () {
 
