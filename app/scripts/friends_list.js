@@ -1,6 +1,10 @@
 (function ($) {
   $(function () {
+    $('.friends_list').on('click', 'li', function(ev){
+      var $tgt = $(ev.currentTarget);
 
+      console.log($tgt.attr('data-id'))
+    });
   });
 
   var showItem = function ($item) {
