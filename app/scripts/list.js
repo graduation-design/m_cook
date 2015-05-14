@@ -12,9 +12,9 @@
 
       Android.callDetailPage($tgtItem.attr('data-id'), $tgtItem.attr('data-type'));
     });
-  })
+  });
 
-  window.onload = function(){
+  $(window).on('load', function(){
     $('.loading_cover').fadeOut();
-  }
+  })
 })(jQuery);
