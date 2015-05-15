@@ -105,22 +105,27 @@ body {
   color: #b486ff;
 }
 
-.duang {
+.animated {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation: duang 0.8s linear;
-  animation: duang 0.8s linear;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.duang {
+  -webkit-animation-name: duang;
+  animation-name: duang;
 }
 
 @keyframes duang {
   0%, 70% {
-    transform: scale(0.5)
+    transform: scale(0.5);
   }
   50%, 60% {
-    transform: scale(1.4)
+    transform: scale(1.4);
   }
   100% {
-    transform: scale(1)
+    transform: scale(1);
   }
 }
 

@@ -96,10 +96,10 @@
     });
 
     var duangIcon = function ($icon) {
-      $icon.addClass('duang');
+      $icon.addClass('duang').addClass('animated');
 
       setTimeout(function () {
-        $icon.removeClass('duang')
+        $icon.removeClass('animated').removeClass('duang');
       }, 1000)
     }
   }
