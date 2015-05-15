@@ -1,5 +1,5 @@
 <!doctype html> <html> <head> <meta charset=UTF-8> <title>Document</title> <meta name=viewport content="width=device-width, initial-scale=1"> <style>
-    html,body{
+    html, body {
       width: 100%;
       height: 100%;
       padding: 0;
@@ -12,29 +12,50 @@
       overflow: hidden;
     }
 
-    .wrapper{
-      position: relative;
-      left: 0;
-      width: 200%;
-      font-size: 0;
-      height: 100%;
-      transition: all 0.3s ease;
+    .animated {
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s; /* -webkit-animation-fill-mode:both; */
+      animation-fill-mode: both
     }
 
-    .wrapper > div{
-      display: inline-block;
-      width: 50%;
-      height: 100%;
-      font-size: 16px;
+    @-webkit-keyframes pulse {
+      0% {
+        -webkit-transform: scale(1)
+      }
+      50% {
+        -webkit-transform: scale(1.5)
+      }
+      95% {
+        -webkit-transform: scale(0.9)
+      }
+      100% {
+        -webkit-transform: scale(1)
+      }
     }
-  </style> </head> <body> <div class=viewport> <div class=wrapper> <div class=t style="background-color: skyblue;"><span id=left>left </span><span id=transform>transform</span></div> <div class=t style="background-color: deepskyblue">123</div> </div> </div> <script src=scripts/vendor.js></script> <script>
-  $(function(){
-    var $wrapper = $('.wrapper');
-    $('#left').on('click', function(){
-      $wrapper.css('left', '-100%');
-    });
-    $('#transform').on('click', function(){
-      $wrapper.css('transform', 'translateX(-50%)');
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1)
+      }
+      50% {
+        transform: scale(1.5)
+      }
+      95% {
+        transform: scale(0.9)
+      }
+      100% {
+        transform: scale(1)
+      }
+    }
+
+    .pulse {
+      -webkit-animation-name: pulse;
+      animation-name: pulse
+    }
+  </style> </head> <body> <div class=viewport> <div id=target style="width: 100px;height: 100px;margin: 0 auto;background-color: skyblue;"> </div> </div> <script src=scripts/vendor.js></script> <script>
+  $(function () {
+    $('#target').on('click', function(){
+      $(this).addClass('pulse').addClass('animated');
     })
   })
 </script> </body> </html> 
