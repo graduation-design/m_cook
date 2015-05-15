@@ -95,10 +95,7 @@ body {
 }
 
 .social_toolbar li .icon {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transform: scale(1);
-  transform: scale(1);
+  display: inline-block;
 }
 
 .social_toolbar li.used .icon {

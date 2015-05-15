@@ -96,7 +96,7 @@
     });
 
     var duangIcon = function ($icon) {
-      $icon.addClass('pulse').addClass('animated');
+      $icon.addClass('duang').addClass('animated');
 
       //setTimeout(function () {
       //  $icon.removeClass('pulse').removeClass('duang');
