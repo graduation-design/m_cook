@@ -105,13 +105,6 @@ body {
   color: #b486ff;
 }
 
-.animated {
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-}
-
 .duang {
   -webkit-animation-name: duang;
   animation-name: duang;
@@ -139,4 +132,45 @@ body {
   100% {
     -webkit-transform: scale(1);
   }
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s; /* -webkit-animation-fill-mode:both; */
+  animation-fill-mode: both
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1)
+  }
+  50% {
+    -webkit-transform: scale(1.5)
+  }
+  95% {
+    -webkit-transform: scale(0.9)
+  }
+  100% {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1)
+  }
+  50% {
+    transform: scale(1.5)
+  }
+  95% {
+    transform: scale(0.9)
+  }
+  100% {
+    transform: scale(1)
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse
 }

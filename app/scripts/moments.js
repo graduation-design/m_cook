@@ -96,11 +96,11 @@
     });
 
     var duangIcon = function ($icon) {
-      $icon.addClass('duang').addClass('animated');
+      $icon.addClass('pulse').addClass('animated');
 
-      setTimeout(function () {
-        $icon.removeClass('animated').removeClass('duang');
-      }, 1000)
+      //setTimeout(function () {
+      //  $icon.removeClass('pulse').removeClass('duang');
+      //}, 1000)
     }
   }
 }(jQuery));
