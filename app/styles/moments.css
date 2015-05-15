@@ -18,7 +18,7 @@ body {
   font-size: 0;
 }
 
-.post_info > *{
+.post_info > * {
   display: inline-block;
   font-size: 0.36rem;
 }
@@ -63,7 +63,7 @@ body {
   height: 2.16rem;
 }
 
-.social_toolbar{
+.social_toolbar {
   font-size: 0;
   display: flex;
   padding: 0.2rem 0 0;
@@ -101,6 +101,41 @@ body {
   transform: scale(1);
 }
 
-.social_toolbar li.used .icon{
+.social_toolbar li.used .icon {
   color: #b486ff;
+}
+
+.duang {
+  -webkit-animation: duang 1s;
+  animation: duang 1s;
+}
+
+@keyframes duang {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+  50% {
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6)
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+}
+
+@-webkit-keyframes duang {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+  50% {
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6)
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
 }

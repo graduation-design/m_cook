@@ -71,7 +71,12 @@
       var $likeNum = $tgt.find('.num');
       var $momentsItem = $tgt.parents('.moment_item');
 
-      if ($tgt.siblings('.hate').hasClass('used')) return;
+      var $hate = $tgt.siblings('.hate');
+      var $hateNum = $hate.find('.num');
+      if ($hate.hasClass('used')){
+        $hate.removeClass('used');
+        $hateNum.text(parseInt($likeNum.text()) - 1);
+      }
 
       duangIcon($tgt.find('.icon'));
       if ($tgt.hasClass('used')) {
@@ -91,17 +96,11 @@
     });
 
     var duangIcon = function ($icon) {
-      $icon.css({
-        '-webkit-transform': 'scale(1.6)',
-        'transform': 'scale(1.6)'
-      });
+      $icon.addClass('duang');
 
       setTimeout(function () {
-        $icon.css({
-          '-webkit-transform': 'scale(1)',
-          'transform': 'scale(1)'
-        });
-      }, 250)
+        $icon.removeClass('duang')
+      }, 1000)
     }
   }
 }(jQuery));
