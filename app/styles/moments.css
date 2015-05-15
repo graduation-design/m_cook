@@ -113,23 +113,31 @@ body {
 }
 
 @keyframes duang {
-  0%, 100% {
-    -webkit-transform: scale(1);
-    transform: scale(1)
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5)
   }
-  50%, 80% {
+  50%, 60% {
     -webkit-transform: scale(1.4);
     transform: scale(1.4)
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
   }
 }
 
 @-webkit-keyframes duang {
-  0%, 100% {
-    -webkit-transform: scale(1);
-    transform: scale(1)
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5)
   }
-  50%, 80% {
+  50%, 60% {
     -webkit-transform: scale(1.4);
     transform: scale(1.4)
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
   }
 }

@@ -21,12 +21,18 @@ $(function () {
 
   //things before submit
   $form.on('submit', function () {
+    addUploader();
     addTags();
   });
 
   bindMaterialEvent();
   bindStepEvent();
 });
+
+function addUploader(){
+  var uid = Android.getUploader();
+  $('#form').append(`<input name="uploader" value="${uid}" type="hidden"/>`);
+}
 
 function addTags() {
   var string = $('.tags').val().trim().replace(/ +/g, ' ');
