@@ -8,16 +8,25 @@ $(function () {
   });
 
   $('.file_selector').on('change', function (ev) {
-    //var $tgt = $(ev.target);
-    //if (uuid === 0) {
-    //  alert('初始化失败');
-    //  $tgt.val('');
-    //  return;
-    //}
+    var $tgt = $(ev.target);
+    if (uuid === 0) {
+      alert('初始化失败');
+      $tgt.val('');
+      return;
+    }
 
     imgUpload($(ev.target), uuid)
   });
+
+  $('#form').on('submit', function(){
+    addUploader();
+  })
 });
+
+function addUploader(){
+  var uid = Android.getTip_uploader();
+  $('#form').append(`<input name="tip_uploader" value="${uid}" type="hidden"/>`);
+}
 
 function imgUpload(fileInput, uuid) {
   var formData = new FormData();

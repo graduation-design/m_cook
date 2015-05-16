@@ -3,7 +3,7 @@
     $('.friends_list').on('click', 'li', function(ev){
       var $tgt = $(ev.currentTarget);
 
-      console.log($tgt.attr('data-id'))
+      Android.callDetailPage($tgt.attr('data-id'), 'friend');
     });
   });
 
