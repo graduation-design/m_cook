@@ -18,6 +18,13 @@
     $('.loading_cover').fadeOut();
     setTimeout(function(){
       $('.blink_text').addClass('play');
+
+      setTimeout(function(){
+        //banner title to small
+        $('.banner_detail').addClass('small');
+        $('.cookbook_name').addClass('small');
+        $('.author').addClass('small');
+      },3000)
     }, 1000);
   })
 })(jQuery);
