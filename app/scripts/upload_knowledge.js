@@ -1,7 +1,20 @@
 $(function () {
-  var uuid = $('#uuid').val();
+  //init uuid
+  var uuid = 0;
+
+  $.getJSON($('#J_uuid_url').val(), function (data) {
+    $('#uuid').val(data.uuid);
+    uuid = data.uuid;
+  });
 
   $('.file_selector').on('change', function (ev) {
+    //var $tgt = $(ev.target);
+    //if (uuid === 0) {
+    //  alert('初始化失败');
+    //  $tgt.val('');
+    //  return;
+    //}
+
     imgUpload($(ev.target), uuid)
   });
 });

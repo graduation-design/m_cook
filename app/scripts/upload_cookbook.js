@@ -10,7 +10,7 @@ $(function () {
 
   $(document).on('change', '.file_selector', function (ev) {
     var $tgt = $(ev.target);
-    console.log('tgt', $tgt);
+    //console.log('tgt', $tgt);
     if (uuid === 0) {
       alert('初始化失败');
       $tgt.val('');
