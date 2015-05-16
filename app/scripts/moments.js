@@ -8,7 +8,7 @@
   });
 
   var toDetailEvent = function () {
-    $('.moment_list').on('click', '.post_img a', function (ev) {
+    $('.moments_list').on('click', '.post_text, .post_img', function (ev) {
       var $tgt = $(ev.currentTarget);
       var $momentsItem = $tgt.parents('.moment_item');
 
