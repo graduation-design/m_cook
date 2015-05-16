@@ -16,5 +16,8 @@
 
   $(window).on('load', function(){
     $('.loading_cover').fadeOut();
+    setTimeout(function(){
+      $('.blink_text').addClass('play');
+    }, 1000);
   })
 })(jQuery);

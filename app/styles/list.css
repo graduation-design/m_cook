@@ -95,3 +95,94 @@ body {
   left: 0;
   bottom: 0;
 }
+
+#banner {
+  background: #000 no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 40%;
+  overflow: hidden;
+}
+
+#banner .banner_detail {
+  background-color: rgba(81,81,81,.8);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #1e1a1b;
+  overflow: hidden;
+}
+
+#banner a {
+  position: relative;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+/* blink_text */
+.blink_text {
+  color: #D3D3D3;
+  font-weight: 400;
+  font-size: 0.48rem;
+  overflow: hidden;
+  padding: 0 0 10px;
+}
+
+.blink_text::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-width: 2px 0;
+  border-color: #282828;
+  border-style: solid;
+  left: 0;
+  -webkit-transform: translate3d(-101%,0,0);
+  transform: translate3d(-101%,0,0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.blink_text.play::before {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.blink_text span {
+  display: inline-block;
+  position: relative;
+  -webkit-transform: perspective(1000px) rotate3d(0,1,0,0deg);
+  transform: perspective(1000px) rotate3d(0,1,0,0deg);
+  -webkit-transition: -webkit-transform 0.5s, color 0.5s;
+  transition: transform 0.5s, color 0.5s;
+}
+
+.blink_text.play span {
+  color: #1e1a1b;
+  -webkit-transform: perspective(1000px) rotate3d(0,1,0,360deg);
+  transform: perspective(1000px) rotate3d(0,1,0,360deg);
+}
+
+.blink_text span:nth-child(4),
+.blink_text.play span:first-child {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.blink_text span:nth-child(3),
+.blink_text.play span:nth-child(2) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.blink_text span:nth-child(2),
+.blink_text.play span:nth-child(3) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.blink_text span:first-child,
+.blink_text.play span:nth-child(4) {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
