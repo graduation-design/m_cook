@@ -17,14 +17,16 @@
   $(window).on('load', function(){
     $('.loading_cover').fadeOut();
     setTimeout(function(){
+      if($('#banner').length === 0) return;
+
       $('.blink_text').addClass('play');
 
       setTimeout(function(){
         //banner title to small
         $('.banner_detail').addClass('small');
-        $('.cookbook_name').addClass('small');
-        $('.author').addClass('small');
-      },3000)
+        $('.cookbook_name').addClass('show');
+        $('.author').addClass('show');
+      },2000)
     }, 1000);
   })
 })(jQuery);
