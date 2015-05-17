@@ -3,6 +3,11 @@
     $('.friends_list').on('click', 'li', function(ev){
       var $tgt = $(ev.currentTarget);
 
+      $tgt.addClass('active');
+      setTimeout(function(){
+        $tgt.removeClass('active');
+      },1000);
+
       Android.callDetailPage($tgt.attr('data-id'), 'friend');
     });
   });

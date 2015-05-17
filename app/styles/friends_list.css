@@ -8,8 +8,8 @@
 .friends_list li {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  -webkit-transform: translate3D(1rem,0,0);
-  transform: translate3D(1rem,0,0);
+  -webkit-transform: translate3D(1rem, 0, 0);
+  transform: translate3D(1rem, 0, 0);
   opacity: 0;
   font-size: 0;
   padding: 0.2rem 0.24rem;
@@ -27,6 +27,45 @@
   height: 1.2rem;
   border-radius: 100%;
   overflow: hidden;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.friends_list .active .avatar {
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: pulse_rotate 1s;
+  animation: pulse_rotate 1s;
+}
+
+@keyframes pulse_rotate {
+  0% {
+    transform: rotate(-60deg);
+  }
+  80% {
+    transform: rotate(400deg);
+  }
+  90% {
+    transform: rotate(340deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes pulse_rotate {
+  0% {
+    transform: rotate(-60deg);
+  }
+  50% {
+    transform: rotate(400deg);
+  }
+  80% {
+    transform: rotate(340deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .friends_list .info {
@@ -37,7 +76,8 @@
 .friends_list .info .user_name {
   color: #6b6b6f;
   width: 4rem;
-  overflow: hidden;white-space: nowrap;
+  overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 
