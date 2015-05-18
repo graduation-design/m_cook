@@ -3,7 +3,8 @@
  */
 
 function init() {
-  var height = $('.big-pic').height();
+  //var height = $('.big-pic').height();
+  var height = 500;
   $('#slider_container').css('height', height);
   $('.slides').css('height', height);
 
