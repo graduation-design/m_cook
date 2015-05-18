@@ -31,6 +31,11 @@
   transform: rotate(0deg);
 }
 
+.friends_list .avatar img{
+  width: 100%;
+  height: 100%;
+}
+
 .friends_list .active .avatar {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
