@@ -8,7 +8,11 @@
         $tgt.removeClass('active');
       },1000);
 
-      Android.callDetailPage($tgt.attr('data-id'), 'friend');
+      Android.callDetailPage($tgt.attr('data-id'),
+        'friend',
+        $tgt.find('.user_name').text().replace(/♂|♀/, ''),
+        $tgt.find('.sign').text(),
+        $tgt.attr('data-isFocus'));
     });
   });
 
