@@ -14,12 +14,12 @@
     });
   });
 
-  $(window).on('load', function () {
+  $(function () {
     var $banner = $('#banner');
     $('.loading_cover').fadeOut();
 
-    if ($banner.length !== 0){
-      $banner.on('click', function(ev){
+    if ($banner.length !== 0) {
+      $banner.on('click', function (ev) {
         var $tgtItem = $(ev.currentTarget);
 
         Android.callDetailPage($tgtItem.attr('data-id'), $tgtItem.attr('data-type'));
